@@ -16,7 +16,7 @@ import { useEffect, useState } from 'react';
 import {useRouter} from 'next/router';
 
 import styled from "styled-components";
-import AmountBar from "../global/Bar";
+import AmountBar from "../global/AmountBar";
 
 
 const CardCont = styled.div`
@@ -59,11 +59,11 @@ export default function InfoCard() {
   const [nutrientFour, setNutrientFour] = useState("Nutrition 4");
   const [nutrientFive, setNutrientFive] = useState("Nutrition 5");
 
-  const [valOne, setValOne] = useState(1);
-  const [valTwo, setValTwo] = useState(10);
-  const [valThree, setValThree] = useState(45);
-  const [valFour, setValFour] = useState(60);
-  const [valFive, setValFive] = useState(100);
+  const [valOne, setValOne] = useState(0);
+  const [valTwo, setValTwo] = useState(0);
+  const [valThree, setValThree] = useState(0);
+  const [valFour, setValFour] = useState(0);
+  const [valFive, setValFive] = useState(0);
   
 
   return (
