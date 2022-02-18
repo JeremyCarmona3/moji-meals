@@ -9,7 +9,7 @@ const MainCont = styled.div`
     min-height: 400px;
     background: #e8f9d5;
     border-radius: 22px;
-
+    overflow-wrap: break-word;
 `
 
 const Header = styled.text`
@@ -21,7 +21,7 @@ const FactText = styled.text`
     font-size: 1.3em;
     margin-left: 5%;
     margin-top: 5%;
-
+    
 `
 const FactCont = styled.div`
     display: flex;
@@ -29,7 +29,8 @@ const FactCont = styled.div`
     margin-left: 5%;
     margin-top: 5%;
     align-items: center;
-    
+    overflow-wrap: break-word;
+    word-break: break-all;
 `
 const Bullet = styled.div`
     display: flex;
