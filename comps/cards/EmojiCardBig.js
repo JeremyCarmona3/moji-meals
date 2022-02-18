@@ -13,8 +13,8 @@ const EmojiCardCont = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  min-height: 250px;
+  width: 18vw;
+  height: 30vh;
   background: #fff;
   border-radius: 22px;
   box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.25);
@@ -23,8 +23,8 @@ const EmojiCardCont = styled.div`
 const EmojiImageCont = styled.img`
   display: flex;
   width: 50%;
-  min-height: 150px;
-  background: red;
+  height: 50%;
+  background: #fff;
   
 `
 const EmojiText = styled.text`
