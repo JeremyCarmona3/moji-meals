@@ -2,6 +2,7 @@ import react, { useState } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import { IoMenu, IoArrowBackOutline, IoClose } from "react-icons/io5";
+import { useRouter } from 'next/router';
 
 const NavCont = styled.div`
   display: flex;
@@ -49,12 +50,14 @@ const LinksCol = styled.div`
 `;
 
 const Link = styled.a`
-
+  cursor: pointer;
 `;
 
 const NavBar = ({
   title='Discover eMoj',
-  logo='/Logo.png'
+  logo='/Logo.png',
+  showBackBtn='none',
+  showLogo=''
 }) => {
   const [links, setLinks] = useState(false);
 
@@ -66,20 +69,33 @@ const NavBar = ({
     setLinks(false);
   }
 
+  const router = useRouter();
+
   if (links === false) {
     return (
       <NavCont>
         <RowCont>
-          <IoArrowBackOutline size={60} />
+          <IoArrowBackOutline 
+            size={60} 
+            style={{cursor: 'pointer'}}
+            display={showBackBtn}
+          />
           <HeaderText>
             {title}
           </HeaderText>
         </RowCont>
         <RowCont>
-          <Image src={logo} alt="Moji Meals Logo" width={243} height={122}/>
+          <Image 
+            src={logo} 
+            alt="Moji Meals Logo" 
+            width={243} 
+            height={122} 
+            display={showLogo}
+          />
           <IoMenu 
             size={60} 
             onClick={showLinks}
+            style={{cursor: 'pointer'}}
           />
         </RowCont>
       </NavCont>
@@ -91,13 +107,14 @@ const NavBar = ({
             <IoClose
               size={60} 
               onClick={showNav}
+              style={{cursor: 'pointer'}}
             />
           </CloseCont>
           <LinksCol>
             <Image src={logo} alt="Moji Meals Logo" width={243} height={122} layout='fixed'/>
-            <Link>Home</Link>
-            <Link>Nutrition</Link>
-            <Link>Settings</Link>
+            <Link onClick={() => router.push('/')}>Home</Link>
+            <Link onClick={() => router.push('/')}>Nutrition</Link>
+            <Link onClick={() => router.push('/')}>Settings</Link>
           </LinksCol>
         </LinksCont>
       );
