@@ -12,11 +12,12 @@ background: ${props=>props.bgColor};
 
 const ButtonText = styled.h1`
 color: ${props=>props.color};
+font-size: 20px;
 `;
 
 export default function Button({
     text ="Calories",
-    color ="white",
+    color ="#ffffff",
     bgColor ="#498098",
     onButtonPress
 })
