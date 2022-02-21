@@ -37,7 +37,6 @@ const LinksCont = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  border: 1px solid black;
 `;
 
 const LinksCol = styled.div`
@@ -112,9 +111,9 @@ const NavBar = ({
           </CloseCont>
           <LinksCol>
             <Image src={logo} alt="Moji Meals Logo" width={243} height={122} layout='fixed'/>
-            <Link onClick={() => router.push('/')}>Home</Link>
-            <Link onClick={() => router.push('/')}>Nutrition</Link>
-            <Link onClick={() => router.push('/')}>Settings</Link>
+            <Link onClick={() => router.push('/')}>Moji Library</Link>
+            <Link onClick={() => router.push('/findRecipe')}>Find Recipe</Link>
+            <Link onClick={() => router.push('/settings')}>Settings</Link>
           </LinksCol>
         </LinksCont>
       );
