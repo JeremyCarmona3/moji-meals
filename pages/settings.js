@@ -11,6 +11,26 @@ import AmountBar from '../comps/global/AmountBar'
 import Bar from '../comps/global/Bar'
 
 import styles from '../styles/Home.module.css'
+import styled from 'styled-components'
+
+const Cont = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 0 5%;
+  justify-content: space-between;
+`;
+
+const BtnRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const Headers = styled.p`
+  font-size: 24px;
+`;
 
 export default function Settings() {
   return (
@@ -21,7 +41,67 @@ export default function Settings() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar title='Settings' />
-      <Button />
+      <Cont>
+        <Headers>Default Preferences</Headers>
+        <BtnRow>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </BtnRow>
+
+        <Headers>Vitamin</Headers>
+        <BtnRow>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </BtnRow>
+
+        <BtnRow>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </BtnRow>
+
+        <Headers>Minerals</Headers>
+        <BtnRow>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </BtnRow>
+
+        <BtnRow>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </BtnRow>
+
+        <Headers>Fat</Headers>
+        <BtnRow>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </BtnRow>
+
+        <BtnRow>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </BtnRow>
+      </Cont>
     </div>
   )
 }
