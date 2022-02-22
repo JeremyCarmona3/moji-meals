@@ -78,9 +78,13 @@ export default function Home() {
 
 
   }
+  const goBack = () => {
+    setCondition('main');
+  }
 
 if(status == 'main'){
     return (<>
+      <NavBar />
      <CardCont>
        <NavBar/>
        {/* {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji}></EmojiCard>)} */}
