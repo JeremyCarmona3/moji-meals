@@ -29,9 +29,6 @@ export default function Home() {
   const ShowDetails =(i)=>{
    var name = lists[i].name
    var emoji =lists[i].emoji
-  
-   console.log(name)
-   console.log(emoji)
 
    setEmoji(emoji)
    setCondition(name)
@@ -49,7 +46,8 @@ if(status == 'main'){
 
   if(status == condition){
     return (<>
-       <EmojiCardBig> imagesrc = </EmojiCardBig>
+      <EmojiCardBig imagesrc= {emoji}> </EmojiCardBig>
+       
    </>)
   }
 

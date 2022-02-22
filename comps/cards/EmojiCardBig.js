@@ -19,27 +19,20 @@ const EmojiCardCont = styled.div`
   border-radius: 22px;
   box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 1%;
+  font-size:70px;
 `
-const EmojiImageCont = styled.img`
+const EmojiText = styled.p`
   display: flex;
-  width: 50%;
-  height: 50%;
-  background: #fff;
-  
-`
-const EmojiText = styled.text`
-  display: flex;
-  
   font-size: 20px;
 `
 const EmojiCardBig = ({
   emojiname="default",
-  imagesrc="https://placekitten.com/100/100"
+  imagesrc= "🍇"
 })=>{
   return<MainCont>
     <EmojiCardCont >
-    <EmojiImageCont src={imagesrc}/>
-  </EmojiCardCont>
+    {imagesrc}
+    </EmojiCardCont>
 
   <EmojiText>{emojiname}</EmojiText>
   </MainCont>
