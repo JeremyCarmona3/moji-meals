@@ -24,6 +24,7 @@ const Name = styled.label`
   font-size: 16px;
   line-height: 0.5;
   margin-left: 5px;
+
   color: Black;
 `
 
@@ -33,7 +34,7 @@ const BarCont = styled.div`
   margin: 50;
   border-radius: 50px;
   box-shadow: 0px 3px 6px grey;
-  overflow: hidden;
+
   background: #B2B3C6;
 `
 
@@ -43,6 +44,7 @@ const Bar = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
+  padding: 0 10px;
   
   background: #FFA722;
 `
@@ -51,8 +53,7 @@ const BarText = styled.div`
   line-height: 0;
   text-shadow: 0 2px 1px #000;
   font-weight: 600;
-  
-  padding: 0 10px;
+
   color: #FFF;
 `
 
