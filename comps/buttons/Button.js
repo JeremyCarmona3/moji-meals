@@ -7,6 +7,7 @@ align-items: center;
 width: 228px;
 height: 64px;
 border-radius: 22px;
+margin:10px;
 background: ${props=>props.bgColor};
 `;
 
@@ -19,7 +20,7 @@ export default function Button({
     text ="Calories",
     color ="#ffffff",
     bgColor ="#498098",
-    onButtonPress
+    onButtonPress = ()=>{}
 })
 {
 return <Container onPress={onButtonPress} bgColor={bgColor}>

@@ -56,9 +56,10 @@ const NavBar = ({
   title='Discover eMoj',
   logo='/Logo.png',
   showBackBtn='none',
-  showLogo=''
+  showLogo='',
 }) => {
   const [links, setLinks] = useState(false);
+  const [condition, setCondition] = useState('main');
 
   const showLinks = () => {
     setLinks(true);
@@ -66,6 +67,10 @@ const NavBar = ({
 
   const showNav = () => {
     setLinks(false);
+  }
+  
+  const backHome = () =>{
+     setCondition('main')
   }
 
   const router = useRouter();
@@ -111,7 +116,7 @@ const NavBar = ({
           </CloseCont>
           <LinksCol>
             <Image src={logo} alt="Moji Meals Logo" width={243} height={122} layout='fixed'/>
-            <Link onClick={() => router.push('/')}>Moji Library</Link>
+            <Link onClick={() => router.push('/') && backHome()}>Moji Library</Link>
             <Link onClick={() => router.push('/findRecipe')}>Find Recipe</Link>
             <Link onClick={() => router.push('/settings')}>Settings</Link>
           </LinksCol>

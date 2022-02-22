@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import EmojiCardBig from '../comps/cards/EmojiCardBig';
 import React, { useState } from 'react';
 import HighlightCard from '../comps/cards/HighlightCard';
-import NutritionCard from '../comps/cards/NutritionCard'
+import NutritionCard from '../comps/cards/NutritionCard';
+import NavBar from '../comps/global/Navbar';
 
 
 const CardCont = styled.div`
@@ -65,6 +66,7 @@ export default function Home() {
    var nutFive = lists[i].TotalFat
   
    console.log(nutOne)
+   
    setEmoji(emoji)
    setCondition(name)
    setnutOne(nutOne)
@@ -80,6 +82,7 @@ export default function Home() {
 if(status == 'main'){
     return (<>
      <CardCont>
+       <NavBar/>
        {/* {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji}></EmojiCard>)} */}
        {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji} onclick ={()=>ShowDetails(i)}></EmojiCard>)}
      </CardCont>
@@ -89,9 +92,10 @@ if(status == 'main'){
   if(status == condition){
     return (<>
      <CardCont>
-       
+       <NavBar/>
+
        <ContOne>
-            <EmojiCardBig imagesrc= {emoji}> </EmojiCardBig>
+            <EmojiCardBig imagesrc= {emoji} emojiname ={condition}> </EmojiCardBig>
        </ContOne>
        
       <ContTwo>
