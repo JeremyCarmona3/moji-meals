@@ -6,10 +6,13 @@ const MainCont = styled.div`
     display: flex;
     flex-direction: column;
     width:30%;
-    min-height: 400px;
-    background: #e8f9d5;
+    min-height: 300px;
+    margin:20px;
+    padding: 30px;
+    background-color:#DDF4C3; 
     border-radius: 22px;
     overflow-wrap: break-word;
+    box-shadow: 0px 4px 6px grey;
 `
 
 const Header = styled.text`
