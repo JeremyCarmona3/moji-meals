@@ -26,6 +26,8 @@ const BtnRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
 `;
 
 const Headers = styled.p`
