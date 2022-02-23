@@ -74,7 +74,6 @@ const NavBar = ({
   backOnClick=''
 }) => {
   const [links, setLinks] = useState(false);
-  const [condition, setCondition] = useState('main');
 
   const showLinks = () => {
     setLinks(true);
@@ -82,10 +81,6 @@ const NavBar = ({
 
   const showNav = () => {
     setLinks(false);
-  }
-  
-  const backHome = () =>{
-     setCondition('main')
   }
 
   const router = useRouter();

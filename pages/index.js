@@ -95,7 +95,13 @@ if(status == 'main'){
   if(status == condition){
     return (<>
      <CardCont>
-       <NavBar/>
+     
+     <NavBar 
+        title='' 
+        showBackBtn=''
+        showLogo='none'
+        backOnClick={goBack}
+      />
 
        <ContOne>
             <EmojiCardBig imagesrc= {emoji} emojiname ={condition}> </EmojiCardBig>
@@ -114,7 +120,7 @@ if(status == 'main'){
           nutThree ={nutThree}
           nutFour={nutFour} 
           nutFive ={nutFive}/>
-      </ContTwo>
+      </ContTwo> 
   </CardCont>
    </>)
   }
