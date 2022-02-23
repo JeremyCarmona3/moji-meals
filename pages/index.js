@@ -86,7 +86,6 @@ if(status == 'main'){
     return (<>
       <NavBar />
      <CardCont>
-       <NavBar/>
        {/* {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji}></EmojiCard>)} */}
        {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji} onclick ={()=>ShowDetails(i)}></EmojiCard>)}
      </CardCont>
