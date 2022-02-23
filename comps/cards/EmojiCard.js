@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+
+
 const EmojiCont = styled.div`
 width:200px;
 height:200px;
@@ -61,7 +63,7 @@ emoji = default_data.emoji,
 onclick=()=>{},
 display ="flex",
 border = "",
-id = "lemon"
+id = "lemon" ,
 })=>{
     return(
         <EmojiCont id = {id} onClick={onclick} display ={display} border = {border}>

@@ -189,7 +189,7 @@ if(status == 'main'){
 
   if(status == condition){
     return (<>
-     <CardCont>
+    <CardCont background ={bg[theme]}>
      
      <NavBar 
         title='' 
