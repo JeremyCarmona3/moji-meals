@@ -4,10 +4,11 @@ const EmojiCont = styled.div`
 width:200px;
 height:200px;
 min-width:200px;
-display:flex;
+display:${props=>props.display};
 align-items:center;
 justify-content:center;
 background-color:lightgreen;
+border:${props=>props.border};
 border-radius:20px;
 margin:10px;
 `
@@ -57,10 +58,13 @@ const default_data =
       
 const EmojiCard = ({
 emoji = default_data.emoji,
-onclick=()=>{}
+onclick=()=>{},
+display ="flex",
+border = "",
+id = "lemon"
 })=>{
     return(
-        <EmojiCont onClick={onclick}>
+        <EmojiCont id = {id} onClick={onclick} display ={display} border = {border}>
             <EmojiSize>{emoji}</EmojiSize>  
         </EmojiCont>
     

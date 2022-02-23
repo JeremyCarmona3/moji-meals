@@ -20,16 +20,16 @@ export default function Button({
 	text ="Calories",
 	color ="#ffffff",
 	bgColor ="#498098",
-    onButtonPress = ()=>{},
+    onButtonClick =()=>{},
 	borderWidth = '',
 	borderType = '',
 	borderColor =''
 })
 {
 return <Container 
-		onPress={onButtonPress} 
+		onClick={onButtonClick} 
 		bgColor={bgColor} 
-		borderWidth={borderWidth}
+		borderWidth={borderWidth} 
 		borderColor={borderColor}
 		borderType={borderType}
 	>

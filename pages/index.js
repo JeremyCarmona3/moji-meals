@@ -6,6 +6,9 @@ import React, { useState } from 'react';
 import HighlightCard from '../comps/cards/HighlightCard';
 import NutritionCard from '../comps/cards/NutritionCard';
 import NavBar from '../comps/global/Navbar';
+import { useTheme } from "../utils/provider";
+import { bgcolor} from '../comps/variable';
+import ax from 'axios'
 
 
 const CardCont = styled.div`
@@ -13,9 +16,9 @@ width:100%;
 height:100%;
 display:flex;
 flex-wrap:wrap;
-background-color:white;
 flex-direction:row;
 justify-content:center;
+background-color:${props=>props.background}
 `
 
 const ContOne = styled.div`
@@ -38,7 +41,56 @@ flex-direction:row;
 justify-content:center;
 `
 
-export default function Home() {
+const UserGuide = styled.div`
+width:100%;
+height:100%;
+display:flex;
+flex-wrap:wrap;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+`
+
+const TextCont = styled.div`
+display:flex;
+font-size:40px;
+color:orange;
+font-weight:bold
+`
+
+const InputCont = styled.div`
+width:100%;
+height:100%;
+display:flex;
+justify-content:space-around;
+align-items:center;
+margin:10px;
+`
+
+const SearchButton =styled.button`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 228px;
+height: 64px;
+`
+
+const TextInput = styled.input`
+width:30%;
+height:50px;
+border-radius:10px;
+display:flex;
+`
+
+var timer = null;
+
+export default function Home({
+  bg = bgcolor,
+}){
+  
+  // const {setTheme} = useTheme();
+  const {theme} =useTheme();
+
 
   var lists =[]
   lists = Emoji
@@ -50,6 +102,8 @@ export default function Home() {
   const [nutFour,setnutFour] = useState('data')
   const [nutFive,setnutFive] = useState('data')
   const [nutName,setnutName] = useState('name')
+  const [data,setData] =useState([])
+  const [fruit,setFruit] = useState('lemon')
 
   var status = condition
   
@@ -58,15 +112,11 @@ export default function Home() {
    var emoji =lists[i].emoji
    var keyName = Object.getOwnPropertyNames(lists[i])
 
-
    var nutOne = lists[i].Calories
    var nutTwo = lists[i].Carbohydrates
    var nutThree = lists[i].TotalSugar
    var nutFour = lists[i].Protein
    var nutFive = lists[i].TotalFat
-  
-   console.log(nutOne)
-   
    setEmoji(emoji)
    setCondition(name)
    setnutOne(nutOne)
@@ -76,19 +126,64 @@ export default function Home() {
    setnutFive(nutFive)
    setnutName(keyName)
 
-
   }
+  
   const goBack = () => {
     setCondition('main');
   }
+ 
+
+
+  const inputFilter =async(txt)=>{
+    console.log(txt)
+   
+    if(timer){
+      clearTimeout(timer);
+      timer = null;
+    }
+
+    if(timer === null){
+      timer = setTimeout( async () =>{
+        console.log("async call");
+        const res = await ax.get('../api/emoji',{
+          params:{
+            txt:txt
+          }
+        })
+        console.log(res.data)
+        setData(res.data)
+        setFruit(txt)
+        console.log(fruit)
+
+    
+       
+        if(txt == fruit){
+          var userchoice = document.getElementById(txt)
+          userchoice.style.border = "red solid 2px"
+         }
+   
+
+      },1000) 
+    }
+  } 
+
+
+
 
 if(status == 'main'){
     return (<>
-      <NavBar />
-     <CardCont>
-       {/* {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji}></EmojiCard>)} */}
-       {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji} onclick ={()=>ShowDetails(i)}></EmojiCard>)}
-     </CardCont>
+     
+        <CardCont background ={bg[theme]}>
+        <NavBar/>
+          <UserGuide>
+           <TextCont>Be familiar with food Nutritions</TextCont> 
+           <TextCont>Click an emoji to learn more!!</TextCont> 
+          </UserGuide>
+          <InputCont>
+            <TextInput onChange={(e)=>inputFilter(e.target.value)}></TextInput>
+          </InputCont>
+          {lists.map((o,i)=><EmojiCard id = {o.name} key={i} emoji ={o.emoji} onclick ={()=>ShowDetails(i)}></EmojiCard>)}
+        </CardCont>
    </>)
   }
 
