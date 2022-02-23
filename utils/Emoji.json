@@ -36,8 +36,8 @@
    "Sodium g": 0.02,
    "Zinc mg": 0.0007,
    "Fact 1":"Boosts immune system",
-	 "Fact 2":"Best for people who want to lower blood pressure",
-	 "Fact 3":"People have been cultivating grapes for 8000 years"
+   "Fact 2":"Best for people who want to lower blood pressure",
+   "Fact 3":"People have been cultivating grapes for 8000 years"
  },
  {
    "name": "melon",
@@ -74,7 +74,10 @@
    "Potassium g": 1.82,
    "Selenium ug": 0.004,
    "Sodium g": 0.09,
-   "Zinc mg": 0.0007
+   "Zinc mg": 0.0007,
+   "Fact 1":"Good source of dietary fiber",
+   "Fact 2":"Best for people who want to boost vitamins in their diet",
+   "Fact 3":"There are nearly 40 types of melons"
  },
  {
    "name": "watermelon",
@@ -111,7 +114,10 @@
    "Potassium g": 1.12,
    "Selenium ug": 0.004,
    "Sodium g": 0.01,
-   "Zinc mg": 0.001
+   "Zinc mg": 0.001,
+   "Fact 1":"Helps keep you hydrated",
+   "Fact 2":"Best for people who want to improve heart health",
+   "Fact 3":"Watermelon was found in King Tut’s tomb "
  },
  {
    "name": "tangerine",
@@ -148,7 +154,11 @@
    "Potassium g": 1.66,
    "Selenium ug": 0.001,
    "Sodium g": 0.02,
-   "Zinc mg": 0.0007
+   "Zinc mg": 0.0007,
+   "Fact 1":"Packed with antioxidants",
+   "Fact 2":"Best for people who want to improve brain, skin and heart health",
+   "Fact 3":"Tangerines are named after the place they were first shipped from to Europe - Tangier in Morocco"
+
  },
  {
    "name": "lemon",
@@ -185,7 +195,10 @@
    "Potassium g": 1.38,
    "Selenium ug": 0.004,
    "Sodium g": 0.02,
-   "Zinc mg": 0.0006
+   "Zinc mg": 0.0006,
+   "Fact 1":"Supports cardiovascular health",
+   "Fact 2":"Best for people looking to boost vitamin C",
+   "Fact 3":"A lemon tree can produce up to 600lbs of lemons per year"
  },
  {
    "name": "banana",
@@ -222,7 +235,10 @@
    "Potassium g": 3.58,
    "Selenium ug": 0.01,
    "Sodium g": 0.01,
-   "Zinc mg": 0.0015
+   "Zinc mg": 0.0015,
+   "Fact 1":"Contains several antioxidants",
+   "Fact 2":"Best for people looking to boost potassium intake",
+   "Fact 3":"Bananas have been cultivated for the past 10000 years."
  },
  {
    "name": "pineapple",
@@ -259,7 +275,10 @@
    "Potassium g": 1.09,
    "Selenium ug": 0.001,
    "Sodium g": 0.01,
-   "Zinc mg": 0.0012
+   "Zinc mg": 0.0012,
+    "Fact 1":"Supports tissue healing and arthritis pain",
+    "Fact 2":"Best for people looking to boost their vitamin C intake",
+    "Fact 3":"The first recorded use of the work pineapple date snack to 1938"
  },
  {
    "name": "red apple",
@@ -296,7 +315,10 @@
    "Potassium g": 1.09,
    "Selenium ug": 0,
    "Sodium g": 0.01,
-   "Zinc mg": 0.0004
+   "Zinc mg": 0.0004,
+   "Fact 1":"May lower high cholesterol and blood pressure",
+   "Fact 2":"Best for people looking to boost vitamin C and A",
+   "Fact 3":"Over 2500 varieties of apples are grown in the United States"
  },
  {
    "name": "green apple",
@@ -333,7 +355,10 @@
    "Potassium g": 1.2,
    "Selenium ug": 0.001,
    "Sodium g": 0.01,
-   "Zinc mg": 0.0004
+   "Zinc mg": 0.0004,
+   "Fact 1":"Great for improving vision",
+   "Fact 2":"Great for people looking to boost energy levels",
+   "Fact 3":"The science of growing apples is called pomology"
  },
  {
    "name": "pear",
@@ -370,7 +395,10 @@
    "Potassium g": 1.16,
    "Selenium ug": 0.001,
    "Sodium g": 0.01,
-   "Zinc mg": 0.001
+   "Zinc mg": 0.001,
+   "Fact 1":"Linked to lowered risk of diabetes",
+   "Fact 2":"Great for people looking to increase the copper in their diet",
+   "Fact 3":"There are over 3000 varieties of pairs worldwide"
  },
  {
    "name": "peach",
@@ -407,7 +435,10 @@
    "Potassium g": 1.9,
    "Selenium ug": 0.001,
    "Sodium g": 0,
-   "Zinc mg": 0.0017
+   "Zinc mg": 0.0017,
+   "Fact 1":"Increase your Antioxidants",
+   "Fact 2":"Great for people looking to increase their intake of vitamin C",
+   "Fact 3":"Peaches are a type of stone fruit which means their seed is inside a stone or pit"
  },
  {
    "name": "cherries",
@@ -444,7 +475,10 @@
    "Potassium g": 2.22,
    "Selenium ug": 0,
    "Sodium g": 0,
-   "Zinc mg": 0.0007
+   "Zinc mg": 0.0007,
+   "Fact 1":"Known to boost exercise recovery",
+   "Fact 2":"Great for people looking to increase vitamin C, A and K intake",
+   "Fact 3":"The average cherry tree has 7000 cherries"
  },
  {
    "name": "strawberry",
@@ -481,7 +515,10 @@
    "Potassium g": 1.53,
    "Selenium ug": 0.004,
    "Sodium g": 0.01,
-   "Zinc mg": 0.0014
+   "Zinc mg": 0.0014,
+   "Fact 1":"Great for increasing a healthy amount of cholesterol",
+   "Fact 2":"Great for people looking to have more antioxidants in their diet",
+   "Fact 3":"The average strawberry has 200 seeds"
  },
  {
    "name": "kiwifruit",
@@ -518,7 +555,10 @@
    "Potassium g": 3.12,
    "Selenium ug": 0.002,
    "Sodium g": 0.03,
-   "Zinc mg": 0.0014
+   "Zinc mg": 0.0014,
+   "Fact 1":"Can benefit heart and digestive health",
+   "Fact 2":"Great for people looking to increase Vitamin C and Fiber intake",
+   "Fact 3":"Kiwifruit is the most nutrient dense fruit"
  },
  {
    "name": "tomato",
@@ -555,7 +595,10 @@
    "Potassium g": 2.37,
    "Selenium ug": 0,
    "Sodium g": 0.05,
-   "Zinc mg": 0.0017
+   "Zinc mg": 0.0017,
+   "Fact 1":"Can reduce risk of heart disease",
+   "Fact 2":"Great for people looking to increase vitamin K and C",
+   "Fact 3":"China is the largest producer of tomatoes"
  },
  {
    "name": "avocado",
@@ -592,7 +635,10 @@
    "Potassium g": 4.85,
    "Selenium ug": 0.004,
    "Sodium g": 0.07,
-   "Zinc mg": 0.0064
+   "Zinc mg": 0.0064,
+   "Fact 1":"Improves cholesterol levels",
+   "Fact 2":"Great for people who want food that’s low carb and high in healthy fats",
+   "Fact 3":"Avocados are in the same family as cinnamon"
  },
  {
    "name": "eggplant",
@@ -629,7 +675,10 @@
    "Potassium g": 2.29,
    "Selenium ug": 0.003,
    "Sodium g": 0.02,
-   "Zinc mg": 0.0016
+   "Zinc mg": 0.0016,
+   "Fact 1":"Supports bone health",
+   "Fact 2":"Great for people looking to increase their vitamin C intake",
+   "Fact 3":"In Renaissance Italy, it was called a mala insana or crazy apple"
  },
  {
    "name": "potato",
@@ -666,7 +715,10 @@
    "Potassium g": 4.75,
    "Selenium ug": 0.002,
    "Sodium g": 0.36,
-   "Zinc mg": 0.0032
+   "Zinc mg": 0.0032,
+   "Fact 1":"Dense with nutrients",
+   "Fact 2":"Great for people who want fat-free, gluten-free, cholesterol-free, sodium-free, plant-based, affordable, and good quality carbohydrates",
+   "Fact 3":"There exists a potato museum in Idaho"
  },
  {
    "name": "carrot",
@@ -703,7 +755,10 @@
    "Potassium g": 3.2,
    "Selenium ug": 0.001,
    "Sodium g": 0.69,
-   "Zinc mg": 0.0024
+   "Zinc mg": 0.0024,
+   "Fact 1":"Helps with weight-loss and improved eye health",
+   "Fact 2":"Great for people looking to increase fiber and vitamin A",
+   "Fact 3":"Though usually orange, carrots can also come in yellow, white, and purple varieties"
  },
  {
    "name": "corn",
@@ -740,7 +795,10 @@
    "Potassium g": 2.18,
    "Selenium ug": 0.002,
    "Sodium g": 0.01,
-   "Zinc mg": 0.0062
+   "Zinc mg": 0.0062,
+   "Fact 1":"Promotes heart health",
+   "Fact 2":"Best for people who want to boost their fiber intake",
+   "Fact 3":"Corn is the third most cultivated crop. Wheat and rice are the first two"
  },
  {
    "name": "hot pepper",
@@ -777,7 +835,10 @@
    "Potassium g": 3.22,
    "Selenium ug": 0.005,
    "Sodium g": 0.09,
-   "Zinc mg": 0.0026
+   "Zinc mg": 0.0026,
+   "Fact 1":"Promotes weight loss by reducing appetite and increasing fat burning",
+   "Fact 2":"Great for people who want to increase their vitamin C",
+   "Fact 3":"Since only mammals are sensitive to the burning sensation caused by the capsaicin in peppers, birds are mostly responsible for spreading the seeds"
  },
  {
    "name": "cucumber",
@@ -814,7 +875,10 @@
    "Potassium g": 1.47,
    "Selenium ug": 0.003,
    "Sodium g": 0.02,
-   "Zinc mg": 0.002
+   "Zinc mg": 0.002,
+   "Fact 1":"Helps improve blood sugar control",
+   "Fact 2":"Great for hydration due to being 95% water",
+   "Fact 3":"There can be a 20° difference between the inside of a cucumber and the actual temperature outside, this is thought to be where the phrase “cool as a cucumber” came from"
  },
  {
    "name": "mushroom",
@@ -851,7 +915,10 @@
    "Potassium g": 3.18,
    "Selenium ug": 0.093,
    "Sodium g": 0.05,
-   "Zinc mg": 0.0052
+   "Zinc mg": 0.0052,
+   "Fact 1":"Fights cell damage",
+   "Fact 2":"Great for people who want a low-calorie, high-fiber food choice that can be used diversely in cooking",
+   "Fact 3":"Portobello mushrooms, button mushrooms, and white mushrooms are all the same mushrooms at different levels of maturity"
  },
  {
    "name": "peanuts",
@@ -888,7 +955,10 @@
    "Potassium g": 7.05,
    "Selenium ug": 0.072,
    "Sodium g": 0.18,
-   "Zinc mg": 0.0327
+   "Zinc mg": 0.0327,
+   "Fact 1":"Helps with blood sugar control",
+   "Fact 2":"Best for people looking for a source of healthy fat",
+   "Fact 3":"Peanuts are not nuts at all, they grow underground in pods, which makes them more closely related to peas and soybeans than to tree nuts"
  },
  {
    "name": "chestnut",
@@ -925,7 +995,10 @@
    "Potassium g": 4.84,
    "Selenium ug": 0,
    "Sodium g": 0.02,
-   "Zinc mg": 0.0049
+   "Zinc mg": 0.0049,
+   "Fact 1":"Great source of dietary fiber",
+   "Fact 2":"Good for people who want to boost their vitamin C and folic acids",
+   "Fact 3":"The largest and oldest chestnut tree grows in Sicily on Mount Etna. It is between 2,000 and 4,000 years old, and its diameter is almost 58 meters"
  },
  {
    "name": "bread",
@@ -962,7 +1035,10 @@
    "Potassium g": 1.41,
    "Selenium ug": 0.288,
    "Sodium g": 4.73,
-   "Zinc mg": 0.0104
+   "Zinc mg": 0.0104,
+   "Fact 1":"Helps to feel fuller and manage blood sugar",
+   "Fact 2":"Best as a source of fiber, and contains a variety of other nutrients while being low/absent in fats",
+   "Fact 3":"Bread goes stale 6x faster in the fridge than at room temperature"
  },
  {
    "name": "croissant",
@@ -999,7 +1075,10 @@
    "Potassium g": 1.18,
    "Selenium ug": 0.227,
    "Sodium g": 4.67,
-   "Zinc mg": 0.0075
+   "Zinc mg": 0.0075,
+   "Fact 1":"A source of fiber and vitamins, but can also significantly boost your saturated fat intake due to a relatively large amount of butter content",
+   "Fact 2":"Good for boosting iron and selenium intake",
+   "Fact 3":"A symbol of the French breakfast, the croissant actually comes from Austria, likely originating in the 13th Century"
  },
  {
    "name": "french bread",
@@ -1036,7 +1115,10 @@
    "Potassium g": 1.17,
    "Selenium ug": 0.286,
    "Sodium g": 6.02,
-   "Zinc mg": 0.0104
+   "Zinc mg": 0.0104,
+   "Fact 1":"Promotes healthy cell growth",
+   "Fact 2":"Good for people looking for a source of energy-providing carbohydrates",
+   "Fact 3":"According to a legend, it was Napoleon who asked for the baguette to have a long shape. This made it easier for his soldiers to carry their bread around down their pants while on the battlefield"
  },
  {
    "name": "pancakes",
@@ -1073,7 +1155,10 @@
    "Potassium g": 1.32,
    "Selenium ug": 0.149,
    "Sodium g": 4.39,
-   "Zinc mg": 0.0056
+   "Zinc mg": 0.0056,
+   "Fact 1":"A large source of carbohydrates",
+   "Fact 2":"Good for people who want a quick fuel source for their body",
+   "Fact 3":"According to the Oxford English Dictionary, “flat as a pancake”, has been a catchphrase since at least 1611"
  },
  {
    "name": "cheese",
@@ -1110,7 +1195,10 @@
    "Potassium g": 0.72,
    "Selenium ug": 0.3,
    "Sodium g": 1.87,
-   "Zinc mg": 0.0437
+   "Zinc mg": 0.0437,
+   "Fact 1":"The calcium and protein in cheese makes it great for building strong bones and muscle",
+   "Fact 2":"Best for people who want healthy fats, protein, and more calcium for stronger bones, and stronger teeth. Also good for people who lift weights, as whey protein, the same type of protein used in many powdered muscle-building supplements, is plentiful in cheese",
+   "Fact 3":"The key to finding healthier cheeses is reading the label, nutrient content can vary from brand to brand. . Avoid products that are cheese-flavored and opt for minimally processed varieties instead. When in doubt, always check the packaging"
  },
  {
    "name": "beef",
@@ -1147,7 +1235,10 @@
    "Potassium g": 2.8,
    "Selenium ug": 0.304,
    "Sodium g": 0.68,
-   "Zinc mg": 0.0469
+   "Zinc mg": 0.0469,
+   "Fact 1":"Rich in iron, protein, and packed with other essential vitamins and nutrients",
+   "Fact 2":"Best for people who want to naturally increase energy and brain function through red blood cells, especially important for adolescent girls, pregnant women, menstruating women",
+   "Fact 3":"Beef is the 3rd most widely consumed meat in the world, accounting for about 25% of meat production worldwide, after pork and poultry at 38% and 30% respectively"
  },
  {
    "name": "chicken",
@@ -1184,7 +1275,10 @@
    "Potassium g": 2.64,
    "Selenium ug": 0.257,
    "Sodium g": 0.98,
-   "Zinc mg": 0.0207
+   "Zinc mg": 0.0207,
+   "Fact 1":"The lean protein in chicken is an excellent source of amino acids",
+   "Fact 2":"Best for people who lift weights, chicken helps build muscle tissue, something that is particularly important as we age",
+   "Fact 3":"Eating chicken can reduce the risk of injuries and diseases such as osteoporosis"
  },
  {
    "name": "bacon",
@@ -1221,7 +1315,10 @@
    "Potassium g": 0.15,
    "Selenium ug": 0.057,
    "Sodium g": 0.27,
-   "Zinc mg": 0.0006
+   "Zinc mg": 0.0006,
+   "Fact 1":"When eaten in moderation, it provides necessary fats, protein, and sodium for your body",
+   "Fact 2":"Best for athletes as they need a lot of sodium to keep their diet balanced",
+   "Fact 3":"Bacon and other greasy foods have often been used as home remedies to help with hangovers"
  },
  {
    "name": "hamburger",
@@ -1258,7 +1355,10 @@
    "Potassium g": 2.06,
    "Selenium ug": 0.187,
    "Sodium g": 4.58,
-   "Zinc mg": 0.0187
+   "Zinc mg": 0.0187,
+   "Fact 1":"Hamburgers are a good source of protein, iron, phosphorus, and several other nutrients",
+   "Fact 2":"Best for people who need more iron because of the red meat content in the patty, especially important for adolescent girls, pregnant women, menstruating women",
+   "Fact 3":"If all Hamburgers eaten by Americans in a year are arranged in a straight line, it would circle our Earth 32 times or more"
  },
  {
    "name": "french fries",
@@ -1295,7 +1395,10 @@
    "Potassium g": 5.79,
    "Selenium ug": 0.009,
    "Sodium g": 2.1,
-   "Zinc mg": 0.005
+   "Zinc mg": 0.005,
+   "Fact 1":"French Fries are derived from potatoes, so it’s loaded with various nutrients such as vitamin K, B6",
+   "Fact 2":"Best for people who lack potassium, a mineral helps regulate our heartbeat, musical functions and nerves",
+   "Fact 3":"French Fries are not called that in France. They are known as frites, patates frites, or pommes frites in French"
  },
  {
    "name": "pizza",
@@ -1332,7 +1435,10 @@
    "Potassium g": 1.72,
    "Selenium ug": 0.199,
    "Sodium g": 5.98,
-   "Zinc mg": 0.0134
+   "Zinc mg": 0.0134,
+   "Fact 1":"Choosing the right ingredients on your pizza can make it a healthy option, the tomato sauce on a pizza contains a lot of Vitamin C",
+   "Fact 2":"Best for people who are picky but enjoy variety, a thin crust pizza without a lot of cheese that is topped with extra vegetables and no meat is a healthy and fulfilling meal",
+   "Fact 3":"Some popular pizza toppings in Japan are squid and Mayo Jaga (mayonnaise, potato and bacon)"
  },
  {
    "name": "hotdog",
@@ -1369,7 +1475,10 @@
    "Potassium g": 1.46,
    "Selenium ug": 0.265,
    "Sodium g": 6.84,
-   "Zinc mg": 0.0202
+   "Zinc mg": 0.0202,
+   "Fact 1":"The protein in hot dogs offers all the essential amino acids our bodies need",
+   "Fact 2":"Best for children as protein it is critical for developing, maintaining, and repairing strong muscles",
+   "Fact 3":"The world’s longest hot dog stretched 196.85 feet and was prepared by Japan’s Shizuoka Meat Producers in 2006"
  },
  {
    "name": "taco",
@@ -1406,7 +1515,10 @@
    "Potassium g": 2.09,
    "Selenium ug": 0.092,
    "Sodium g": 3.97,
-   "Zinc mg": 0.0175
+   "Zinc mg": 0.0175,
+   "Fact 1":"When made healthy ingredients, tacos can provide a good balance of protein, fats and carbohydrates and provide ample amounts of fiber, vitamin C, calcium and iron",
+   "Fact 2":"Best for people who are active or growing, as most tacos contain high amounts of protein to support muscle growth and maintenance",
+   "Fact 3":"The world's biggest taco was made in 2011 and was 246 feet long"
  },
  {
    "name": "burrito",
@@ -1443,7 +1555,10 @@
    "Potassium g": 2.04,
    "Selenium ug": 0.107,
    "Sodium g": 4.51,
-   "Zinc mg": 0.0088
+   "Zinc mg": 0.0088,
+   "Fact 1":"The high vegetable content is rich in fiber, which helps maintain our digestive system and immune system",
+   "Fact 2":"Good for people on a health diet, and can be prepared for vegetarians",
+   "Fact 3":"The word Burrito means Little Donkey in Spanish"
  },
  {
    "name": "popcorn",
@@ -1480,7 +1595,10 @@
    "Potassium g": 2.25,
    "Selenium ug": 0.073,
    "Sodium g": 8.84,
-   "Zinc mg": 0.0264
+   "Zinc mg": 0.0264,
+   "Fact 1":"Popcorn is one of the world’s healthiest and most popular snack foods; Popcorn is high in fiber, relatively low in calories and has a low energy density",
+   "Fact 2":"Good for people on a diet, Eating it in moderation without too much butter may help with weight loss",
+   "Fact 3":"Popcorn is a special type of corn that “pops” when exposed to heat. By volume, it is the most popular snack food in America"
  },
  {
    "name": "rice crackers",
@@ -1517,7 +1635,10 @@
    "Potassium g": 2.43,
    "Selenium ug": 0.255,
    "Sodium g": 2.33,
-   "Zinc mg": 0.022
+   "Zinc mg": 0.022,
+   "Fact 1":"Rice crackers are low in calories, fats, and are easily digestible; they are good for snacking",
+   "Fact 2":"Good for people who have irritable bowel syndrome or difficulty with digestion",
+   "Fact 3":"The first modern rice cracker is called Soka Senbei"
  },
  {
    "name": "rice",
@@ -1554,7 +1675,10 @@
    "Potassium g": 0.29,
    "Selenium ug": 0.075,
    "Sodium g": 0,
-   "Zinc mg": 0.0042
+   "Zinc mg": 0.0042,
+   "Fact 1":"Rice contains many essential nutrients, such as carbohydrates, vitamin d, calcium, fiber, iron, and sodium",
+   "Fact 2":"Best for people who are active/busy and need, rice provides energy for intense activities",
+   "Fact 3":"Nearly half of the people in the world get approximately 50% of their calories from rice"
  },
  {
    "name": "spaghetti",
@@ -1591,7 +1715,10 @@
    "Potassium g": 0.44,
    "Selenium ug": 0.264,
    "Sodium g": 1.31,
-   "Zinc mg": 0.0051
+   "Zinc mg": 0.0051,
+   "Fact 1":"Spaghetti contains vitamins, minerals, and fiber. As well as carbohydrates which boosts your energy",
+   "Fact 2":"Best for people who are active/busy and need, rice provides energy for intense activities",
+   "Fact 3":"January 4th is known as National Spaghetti Day"
  },
  {
    "name": "fried shrimp",
@@ -1628,7 +1755,10 @@
    "Potassium g": 0.82,
    "Selenium ug": 0.097,
    "Sodium g": 8.97,
-   "Zinc mg": 0.0058
+   "Zinc mg": 0.0058,
+   "Fact 1":"Shrimp is high in antioxidants, this can protect your cells against damage",
+   "Fact 2":"Best for people who are pescatarian",
+   "Fact 3":"Shrimp can live up to 6 years"
  },
  {
    "name": "ice cream",
@@ -1665,7 +1795,10 @@
    "Potassium g": 1.77,
    "Selenium ug": 0.03,
    "Sodium g": 0.61,
-   "Zinc mg": 0.0052
+   "Zinc mg": 0.0052,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "doughnut",
@@ -1702,7 +1835,10 @@
    "Potassium g": 1.06,
    "Selenium ug": 0.041,
    "Sodium g": 2.15,
-   "Zinc mg": 0.0057
+   "Zinc mg": 0.0057,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "cookie",
@@ -1739,7 +1875,10 @@
    "Potassium g": 2.08,
    "Selenium ug": 0.024,
    "Sodium g": 2.9,
-   "Zinc mg": 0.006
+   "Zinc mg": 0.006,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "cake",
@@ -1776,7 +1915,10 @@
    "Potassium g": 1.4,
    "Selenium ug": 0.119,
    "Sodium g": 3.15,
-   "Zinc mg": 0.0069
+   "Zinc mg": 0.0069,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "chocolate bar",
@@ -1813,7 +1955,10 @@
    "Potassium g": 2.31,
    "Selenium ug": 0.05,
    "Sodium g": 0.54,
-   "Zinc mg": 0.0009
+   "Zinc mg": 0.0009,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "candy",
@@ -1850,7 +1995,10 @@
    "Potassium g": 0.05,
    "Selenium ug": 0.006,
    "Sodium g": 0.38,
-   "Zinc mg": 0.0001
+   "Zinc mg": 0.0001,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "custard flan",
@@ -1887,7 +2035,10 @@
    "Potassium g": 1.18,
    "Selenium ug": 0.087,
    "Sodium g": 0.53,
-   "Zinc mg": 0.0047
+   "Zinc mg": 0.0047,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "honey",
@@ -1924,7 +2075,10 @@
    "Potassium g": 0.52,
    "Selenium ug": 0.008,
    "Sodium g": 0.04,
-   "Zinc mg": 0.0022
+   "Zinc mg": 0.0022,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "milk",
@@ -1961,7 +2115,10 @@
    "Potassium g": 1.51,
    "Selenium ug": 0.02,
    "Sodium g": 0.49,
-   "Zinc mg": 0.0038
+   "Zinc mg": 0.0038,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "black tea",
@@ -1998,7 +2155,10 @@
    "Potassium g": 0.37,
    "Selenium ug": 0,
    "Sodium g": 0.03,
-   "Zinc mg": 0.0002
+   "Zinc mg": 0.0002,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "sake",
@@ -2035,7 +2195,10 @@
    "Potassium g": 0.25,
    "Selenium ug": 0.014,
    "Sodium g": 0.02,
-   "Zinc mg": 0.0002
+   "Zinc mg": 0.0002,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "champagne",
@@ -2072,7 +2235,10 @@
    "Potassium g": 0.71,
    "Selenium ug": 0.001,
    "Sodium g": 0.05,
-   "Zinc mg": 0.0012
+   "Zinc mg": 0.0012,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "red wine",
@@ -2109,7 +2275,10 @@
    "Potassium g": 1.27,
    "Selenium ug": 0.002,
    "Sodium g": 0.04,
-   "Zinc mg": 0.0014
+   "Zinc mg": 0.0014,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  },
  {
    "name": "beer",
@@ -2146,6 +2315,9 @@
    "Potassium g": 0.27,
    "Selenium ug": 0.006,
    "Sodium g": 0.04,
-   "Zinc mg": 0.0001
+   "Zinc mg": 0.0001,
+   "Fact 1":"",
+   "Fact 2":"",
+   "Fact 3":""
  }
 ]
