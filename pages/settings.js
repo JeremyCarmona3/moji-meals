@@ -15,8 +15,6 @@ import { useTheme } from "../utils/provider";
 import {bgcolor,textcolor} from '../comps/variable'
 
 import styled from 'styled-components'
-
-
 import styles from '../styles/Home.module.css'
 
 
@@ -25,17 +23,18 @@ const Cont = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100vw;
-  padding: 0 5%;
+  padding: 0 3%;
   justify-content: space-between;
   background-color:${props=>props.background}
 `;
+
 
 const BtnRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 5px;
 `;
 
 const Headers = styled.p`
@@ -50,7 +49,7 @@ export default function Settings({
 }) {
   const {theme} =useTheme();
   const {setTheme} = useTheme();
-  return (
+  return (<div style ={styles}>
   
   <Cont background ={bg[theme]}>
       <NavBar title='Settings'/>
@@ -119,7 +118,7 @@ export default function Settings({
 
       </Cont>
 
-     
+      </div>
 
 
   )
