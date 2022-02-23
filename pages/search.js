@@ -1,56 +1,62 @@
-import EmojiCard from '../comps/cards/EmojiCard'
-import Emoji from '../utils/Emoji.json'
+import ax from 'axios';
 import styled from 'styled-components'
-import EmojiCardBig from '../comps/cards/EmojiCardBig';
-import React, { useState } from 'react';
+import Toggle from '../comps/buttons/Toggle'
+import { useTheme } from '../utils/provider';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { bgcolor,textcolor } from '../comps/variable';
 
+var timer =null;
 
-const CardCont = styled.div`
-width:100%;
-height:100%;
+const SetCont = styled.div`
 display:flex;
-flex-wrap:wrap;
-background-color:pink;
-flex-direction:row;
-justify-content:center;
+flex-direction:column;
+align-items:center;
+justify-contents;
+height:900px;
+width:100%;
+background-color:${props=>props.background}
 `
 
-export default function Home() {
 
-  var lists =[]
-  lists = Emoji
-  const [condition,setCondition] = useState('main') 
-  const [emoji,setEmoji] =useState('🍇')
+export default function Settings({
+  bg = bgcolor,
+}) {
+  const {theme} =useTheme();
+  // const bgcolor ={};
+  const {setTheme} = useTheme();
+  // const [data,setData] =useState([]) 
+  // const [jpn,setJPN] =useState('ENG') 
+  // const router = useRouter()
 
+  // const Switch =async(lang)=>{
+  //   // console.log(lang)
+  //   // if(timer){
+  //   //   clearTimeout(timer);
+  //   //   timer = null;
+  //   // }
+  //     　timer = setTimeout(async () =>{
+  //       console.log("async call");
+  //       const res = await ax.get('../api/books2',{
+  //         params:{
+  //           lang:"jpn",
+  //         }
+  //       })
+  //       console.log(res.data)
+  //       setData(res.data)
+  //       timer =null;
+  //     },1000) 
+    
 
-  // lists = lists.slice(0,10) 
-  var status = condition
+  // }
   
-  const ShowDetails =(i)=>{
-   var name = lists[i].name
-   var emoji =lists[i].emoji
+  return (
+    <SetCont background ={bg[theme]}>
+      <Toggle text={"DARK Mode"} Click={()=>setTheme('dark')}></Toggle>
+      <Toggle text={"Light Mode"} Click={()=>setTheme('light')}></Toggle>
+  
 
-   setEmoji(emoji)
-   setCondition(name)
-  }
+    </SetCont>
 
-if(status == 'main'){
-    return (<>
-     <CardCont>
-       {/* {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji}></EmojiCard>)} */}
-       {lists.map((o,i)=><EmojiCard key={i} emoji ={o.emoji} onclick ={()=>ShowDetails(i)}></EmojiCard>)}
-     </CardCont>
-   </>)
-  }
-
-
-  if(status == condition){
-    return (<>
-      <EmojiCardBig imagesrc= {emoji}> </EmojiCardBig>
-       
-   </>)
-  }
-
-
-
+  )
 }

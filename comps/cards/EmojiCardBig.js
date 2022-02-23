@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import React from 'react'
+import { useTheme } from "../../utils/provider"
+import {bgcolor,textcolor} from '../../comps/variable'
+
 
 const MainCont = styled.div`
   display: flex;
@@ -24,17 +27,22 @@ const EmojiCardCont = styled.div`
 const EmojiText = styled.p`
   display: flex;
   font-size: 20px;
+  color:${props=>props.color}
 `
 const EmojiCardBig = ({
   emojiname="default",
-  imagesrc= "🍇"
+  imagesrc= "🍇",
+  color = textcolor
 })=>{
+
+  const {theme} =useTheme();
+  
   return<MainCont>
     <EmojiCardCont >
     {imagesrc}
     </EmojiCardCont>
 
-  <EmojiText>{emojiname}</EmojiText>
+  <EmojiText color= {color[theme]}>{emojiname}</EmojiText>
   </MainCont>
 }
 

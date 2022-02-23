@@ -34,7 +34,10 @@
    "Potassium g": 1.91,
    "Selenium ug": 0.001,
    "Sodium g": 0.02,
-   "Zinc mg": 0.0007
+   "Zinc mg": 0.0007,
+   "Fact 1":"Boosts immune system",
+	 "Fact 2":"Best for people who want to lower blood pressure",
+	 "Fact 3":"People have been cultivating grapes for 8000 years"
  },
  {
    "name": "melon",
