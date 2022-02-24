@@ -40,6 +40,10 @@ const CardsCont = styled.div`
   flex-direction: column;
 `;
 
+const FlexImg = styled.div`
+  margin-right: 30px;
+`;
+
 export default function FindRecipe({
   bg = bgcolor,
 }) {
@@ -80,11 +84,13 @@ export default function FindRecipe({
           backOnClick={goBack}
         />
           <DetailsCont>
-            <RecipeCard 
-              imgWidth='500'
-              imgHeight='500'
-              textWidth='100%'
-            />
+            <FlexImg>
+              <RecipeCard 
+                imgWidth='500'
+                imgHeight='500'
+                textWidth='100%'
+              />
+            </FlexImg>
             <CardsCont>
               <IngredientsCard />
               <DirectionsCard />

@@ -6,6 +6,7 @@ import {bgcolor,textcolor} from '../../comps/variable'
 
 const Cont = styled.div`
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   flex-direction: column;
 `;
@@ -25,9 +26,25 @@ const IngContRow = styled.div`
   padding: 10px;
 `;
 
+const IngRow = styled.div`
+  display: flex;
+  flex-direction: Row;
+  flex: 1;
+  align-items: center;
+`;
+
+const HeaderText = styled.p`
+  font-size: 2rem ;
+  color:${props=>props.color};
+`;
 
 const Text = styled.p`
   color:${props=>props.color};
+`;
+
+const Emoji = styled.p`
+  font-size: 1.5rem;
+  padding-right: 5px;
 `;
 
 export default function IngredientsCard({
@@ -36,19 +53,36 @@ export default function IngredientsCard({
   const {theme} =useTheme();
 return (
     <Cont>
-      <Text color ={color[theme]}>Ingredients</Text>
+      <HeaderText color ={color[theme]}>Ingredients</HeaderText>
       <IngContRow color ={color[theme]}>
         <IngCont>
-          <Text color ={color[theme]}>Ingredients</Text>
-
-          <Text color ={color[theme]}>Ingredients</Text>
+          <IngRow>
+            <Emoji>🍇</Emoji>
+            <Text color ={color[theme]}>Ingredients</Text>
+          </IngRow>
+          <IngRow>
+            <Emoji>🍇</Emoji>
+            <Text color ={color[theme]}>Ingredients</Text>
+          </IngRow>
+          <IngRow>
+            <Emoji>🍇</Emoji>
+            <Text color ={color[theme]}>Ingredients</Text>
+          </IngRow>
         </IngCont>
         <IngCont>
-          <Text color ={color[theme]}>Ingredients</Text>
-
-          <Text color ={color[theme]}>Ingredients</Text>
+          <IngRow>
+            <Emoji>🍇</Emoji>
+            <Text color ={color[theme]}>Ingredients</Text>
+          </IngRow>
+          <IngRow>
+            <Emoji>🍇</Emoji>
+            <Text color ={color[theme]}>Ingredients</Text>
+          </IngRow>
+          <IngRow>
+            <Emoji>🍇</Emoji>
+            <Text color ={color[theme]}>Ingredients</Text>
+          </IngRow>
         </IngCont>
-
       </IngContRow>
     </Cont>
   )
