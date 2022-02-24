@@ -61,16 +61,17 @@ const AmountBar = ({
   nutrient = 'Nutrient',
 })=>{
 
-  const BarWidth = {
-    width: `${value}%`
-  }
+  let BuffVal = (value * 10)
 
+  const BarWidth = {
+    width: `${BuffVal}%`
+  }
 
   return <Container>
     <Name>{nutrient}</Name>
     <BarCont>
       <Bar style={BarWidth}>
-        <BarText>{value}%</BarText>
+        <BarText>{value}</BarText>
       </Bar>
     </BarCont>
 </Container>
