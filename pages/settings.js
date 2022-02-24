@@ -8,7 +8,6 @@ import EmojiCardBig from '../comps/cards/EmojiCardBig'
 import HighlightCard from '../comps/cards/HighlightCard'
 import NutritionCard from '../comps/cards/NutritionCard'
 import AmountBar from '../comps/global/AmountBar'
-import Bar from '../comps/global/Bar'
 import Toggle from '../comps/buttons/Toggle'
 
 import { useTheme } from "../utils/provider";
