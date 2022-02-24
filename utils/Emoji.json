@@ -1796,9 +1796,9 @@
    "Selenium ug": 0.03,
    "Sodium g": 0.61,
    "Zinc mg": 0.0052,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Can help with brain stimulation",
+   "Fact 2":"Good for someone looking to increase mineral intake",
+   "Fact 3":"It takes 12 lbs of milk to produce 1 gallon of ice-cream"
  },
  {
    "name": "doughnut",
@@ -1836,9 +1836,9 @@
    "Selenium ug": 0.041,
    "Sodium g": 2.15,
    "Zinc mg": 0.0057,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"The sugar in doughnuts can help with concentration and memory",
+   "Fact 2":"Good for someone who may need higher blood sugar",
+   "Fact 3":"When doughnuts were first brought to America, they were called olykoeks"
  },
  {
    "name": "cookie",
@@ -1876,9 +1876,9 @@
    "Selenium ug": 0.024,
    "Sodium g": 2.9,
    "Zinc mg": 0.006,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"The sugar can give a boost of energy",
+   "Fact 2":"Good for someone who needs a source of carbohydrates or sugar",
+   "Fact 3":"Americans consume over 2 billion cookies a year"
  },
  {
    "name": "cake",
@@ -1916,9 +1916,9 @@
    "Selenium ug": 0.119,
    "Sodium g": 3.15,
    "Zinc mg": 0.0069,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Gives you energy",
+   "Fact 2":"Good for someone looking to increase intake of sugar or carbohydrates",
+   "Fact 3":"The national cake day is celebrated on November 26th"
  },
  {
    "name": "chocolate bar",
@@ -1956,9 +1956,9 @@
    "Selenium ug": 0.05,
    "Sodium g": 0.54,
    "Zinc mg": 0.0009,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Lowers blood pressure",
+   "Fact 2":"Good for someone who may need higher blood sugar",
+   "Fact 3":"It takes around 400 beans to make 1 lb of chocolate"
  },
  {
    "name": "candy",
@@ -1996,9 +1996,9 @@
    "Selenium ug": 0.006,
    "Sodium g": 0.38,
    "Zinc mg": 0.0001,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Gives you energy",
+   "Fact 2":"Good for someone who may need higher blood sugar",
+   "Fact 3":"In Europe during middle ages, the high cost of sugar made candy a delicacy for the wealthy"
  },
  {
    "name": "custard flan",
@@ -2036,9 +2036,9 @@
    "Selenium ug": 0.087,
    "Sodium g": 0.53,
    "Zinc mg": 0.0047,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"The sugar contents can give you energy",
+   "Fact 2":"There is a high amount of calcium you may be looking for",
+   "Fact 3":"This style of food was very popular in the middle ages"
  },
  {
    "name": "honey",
@@ -2076,9 +2076,9 @@
    "Selenium ug": 0.008,
    "Sodium g": 0.04,
    "Zinc mg": 0.0022,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Promotes wound and burn healing and can suppress coughing",
+   "Fact 2":"Good for someone looking to have more antioxidants in their diet",
+   "Fact 3":"Honey is 80% sugars and 20% water"
  },
  {
    "name": "milk",
@@ -2116,9 +2116,9 @@
    "Selenium ug": 0.02,
    "Sodium g": 0.49,
    "Zinc mg": 0.0038,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Promotes strong bones and teeth",
+   "Fact 2":"Great for someone looking for a source of protein",
+   "Fact 3":"Frogs were put in milk to keep it from going sour"
  },
  {
    "name": "black tea",
@@ -2156,9 +2156,9 @@
    "Selenium ug": 0,
    "Sodium g": 0.03,
    "Zinc mg": 0.0002,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"May lower bad cholesterol",
+   "Fact 2":"Great for someone looking for a healthy caffeine alternative to coffee",
+   "Fact 3":"Black tea is the most popular tea in the world"
  },
  {
    "name": "sake",
@@ -2196,9 +2196,9 @@
    "Selenium ug": 0.014,
    "Sodium g": 0.02,
    "Zinc mg": 0.0002,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Potent anti-cancer properties such as its amino acids are carcinogens",
+   "Fact 2":"Great for someone looking for a healthy alcoholic beverage as it has close to no calories, sugar and fat",
+   "Fact 3":"Sake brewing is around 1700 years old"
  },
  {
    "name": "champagne",
@@ -2236,9 +2236,9 @@
    "Selenium ug": 0.001,
    "Sodium g": 0.05,
    "Zinc mg": 0.0012,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Can be good for your heart as the antioxidants protect your blood vessels and prevent blood clots",
+   "Fact 2":"Can be a healthier alternative for alcohol consumption",
+   "Fact 3":"A bottle of 1820 Juglar Cuvee champagne sells for $43,500"
  },
  {
    "name": "red wine",
@@ -2276,9 +2276,9 @@
    "Selenium ug": 0.002,
    "Sodium g": 0.04,
    "Zinc mg": 0.0014,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Can reduce your chances of cancer",
+   "Fact 2":"Can be good for someone looking to lower their bad cholesterol",
+   "Fact 3":"Young red wines are better for you than old red wines"
  },
  {
    "name": "beer",
@@ -2316,8 +2316,8 @@
    "Selenium ug": 0.006,
    "Sodium g": 0.04,
    "Zinc mg": 0.0001,
-   "Fact 1":"",
-   "Fact 2":"",
-   "Fact 3":""
+   "Fact 1":"Can help prevent kidney stones",
+   "Fact 2":"Can be good for someone looking to increase calorie intake if within moderation",
+   "Fact 3":"The earliest signs of beer brewing date back to 3500-2900 B.C"
  }
 ]
