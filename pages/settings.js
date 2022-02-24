@@ -24,7 +24,6 @@ const BtnRow = styled.div`
   flex-wrap: wrap;
   margin: 5px;
   padding: 0 5%;
-  border: 1px solid black;
 `;
 
 const Headers = styled.p`
