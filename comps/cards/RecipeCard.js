@@ -25,20 +25,24 @@ const RecipeImg = styled.img`
 `;
 
 export default function RecipeCard({
-  recipeImg='/RecipeOne.PNG',
+  recipeImg='/RecipeOne.png',
   recipe='Honey Drizzled Berry Banana Toast',
   color = textcolor,
   alignItems='flex-start',
-  textWidth='70%'
+  textWidth='70%',
+  click =()=>{},
+  imgWidth='240',
+  imgHeight='240'
 }) {
   const {theme} =useTheme();
 return (
-    <Cont onClick={() => {}} alignItems={alignItems}>
+    <Cont alignItems={alignItems}>
       <RecipeImg
         src={recipeImg} 
         alt='Recipe Image'
-        width='240'
-        height='240'
+        width={imgWidth}
+        height={imgHeight}
+        onClick={click}
       />
       <Text color={color[theme]} textWidth={textWidth}>{recipe}</Text>
     </Cont>
