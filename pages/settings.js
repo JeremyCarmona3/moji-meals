@@ -1,13 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
 import Button from '../comps/buttons/Button'
 import NavBar from '../comps/global/Navbar'
-import EmojiCard from '../comps/cards/EmojiCard'
-import EmojiCardBig from '../comps/cards/EmojiCardBig'
-import HighlightCard from '../comps/cards/HighlightCard'
-import NutritionCard from '../comps/cards/NutritionCard'
-import AmountBar from '../comps/global/AmountBar'
 import Toggle from '../comps/buttons/Toggle'
 
 import { useTheme } from "../utils/provider";
@@ -22,7 +14,6 @@ const Cont = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100vw;
-  justify-content: space-between;
   background-color:${props=>props.background};
 `;
 
@@ -33,6 +24,7 @@ const BtnRow = styled.div`
   flex-wrap: wrap;
   margin: 5px;
   padding: 0 5%;
+  border: 1px solid black;
 `;
 
 const Headers = styled.p`
@@ -59,8 +51,6 @@ export default function Settings({
           <Button text="Total Sugar"/>
           <Button text="Protein"/>
           <Button text="Total Fat"/>
-        </BtnRow>
-        <BtnRow>
           <Button text="Total Fiber"/>
           <Button text="Cholesterol"/>
           <Button text="Calcium"/>
@@ -75,19 +65,14 @@ export default function Settings({
           <Button text="Vitamin B12"/>
           <Button text="Vitamin C"/>
           <Button text="Vitamin D"/>
-        </BtnRow>
-        <BtnRow>
           <Button text="Vitamin E"/>
           <Button text="Vitamin K"/>
           <Button text="Thiamin"/>
           <Button text="Riboflavin"/>
           <Button text="Niacin"/>
-        </BtnRow>
-        <BtnRow>
           <Button text="Folate"/>
           <Button text="Pantothenic Acid"/>
           <Button text="Choline"/>
-          
         </BtnRow>
 
         <Headers color ={color[theme]}>Additional Minerals</Headers>
@@ -97,9 +82,6 @@ export default function Settings({
           <Button text="Magnesium"/>
           <Button text="Manganese"/>
           <Button text="Phosphorus"/>
-        </BtnRow>
-
-        <BtnRow>
           <Button text="Selenium"/>
           <Button text="Sodium"/>
           <Button text="Zinc"/>
