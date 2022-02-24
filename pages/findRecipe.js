@@ -31,19 +31,37 @@ export default function FindRecipe({
 }) {
   const {theme} =useTheme();
 
-  return (
-    <Cont background ={bg[theme]}>
-      <NavBar title='Find Recipe' />
-      <RecipeCont >
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-      </RecipeCont>
-    </Cont>
-  )
+  const [recipeDetail, setRecipeDetail] = useState('main')
+  var status = recipeDetail
+
+  if (status === 'main') {
+    return (
+      <Cont background ={bg[theme]}>
+        <NavBar title='Find Recipe' />
+        <RecipeCont >
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+        </RecipeCont>
+      </Cont>
+    )
+  }
+  
+  if (status == recipeDetail){
+   return(
+   <Cont background ={bg[theme]}>
+    <NavBar title='Find Recipe' />
+    <RecipeCont >
+        <p>hello</p>
+    </RecipeCont>
+  </Cont>
+)
+  }
+
 }

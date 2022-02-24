@@ -25,7 +25,7 @@ const RecipeImg = styled.img`
 `;
 
 export default function RecipeCard({
-  recipeImg='/RecipeOne.PNG',
+  recipeImg='/RecipeOne.png',
   recipe='Honey Drizzled Berry Banana Toast',
   color = textcolor,
   alignItems='flex-start',
