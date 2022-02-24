@@ -9,10 +9,11 @@ const Cont = styled.div`
   flex-direction: column;
   padding: 1%;
   cursor: pointer;
+  align-items: ${props=>props.alignItems};
 `;
 
 const Text = styled.p`
-  width: 70%;
+  width: ${props=>props.textWidth};
   color:${props=>props.color};
 `;
 
@@ -27,18 +28,23 @@ export default function RecipeCard({
   recipeImg='/RecipeOne.png',
   recipe='Honey Drizzled Berry Banana Toast',
   color = textcolor,
-  click =()=>{}
+  alignItems='flex-start',
+  textWidth='70%',
+  click =()=>{},
+  imgWidth='240',
+  imgHeight='240'
 }) {
   const {theme} =useTheme();
 return (
-    <Cont onClick={click}>
+    <Cont alignItems={alignItems}>
       <RecipeImg
         src={recipeImg} 
         alt='Recipe Image'
-        width='240'
-        height='240'
+        width={imgWidth}
+        height={imgHeight}
+        onClick={click}
       />
-      <Text color={color[theme]}>{recipe}</Text>
+      <Text color={color[theme]} textWidth={textWidth}>{recipe}</Text>
     </Cont>
   )
-} 
+}

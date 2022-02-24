@@ -60,7 +60,13 @@ const LinksCol = styled.div`
 `;
 
 const Link = styled.a`
-  cursor: pointer;
+  font-size: 40px;
+  color: #FFA722;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline; 
+  }
 `;
 
 const ImageCont = styled.div`
