@@ -4,11 +4,11 @@ import { useTheme } from '../../utils/provider';
 
 const ButCont = styled.button`
 background-color:${props=>props.background};
+width:100px;
 margin:10px;
 display:flex;
 justify-contents:center;
 align-item:center;
-min-width:150px;
 border-radius:5px;
 text-align:center;
 `
