@@ -8,8 +8,6 @@ import EmojiCardBig from '../comps/cards/EmojiCardBig'
 import HighlightCard from '../comps/cards/HighlightCard'
 import NutritionCard from '../comps/cards/NutritionCard'
 import AmountBar from '../comps/global/AmountBar'
-
-
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
 import RecipeCard from '../comps/cards/RecipeCard'
