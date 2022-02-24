@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import React, { useState } from 'react'
+
 import Button from '../comps/buttons/Button'
 import NavBar from '../comps/global/Navbar'
 import EmojiCard from '../comps/cards/EmojiCard'

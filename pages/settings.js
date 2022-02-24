@@ -22,23 +22,23 @@ const Cont = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100vw;
-  padding: 0 3%;
   justify-content: space-between;
-  background-color:${props=>props.background}
+  background-color:${props=>props.background};
 `;
 
 
 const BtnRow = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 5px;
+  padding: 0 5%;
 `;
 
 const Headers = styled.p`
+  padding: 0 5%;
   font-size: 24px;
-  color:${props=>props.color}
+  color:${props=>props.color};
 `;
 
 
