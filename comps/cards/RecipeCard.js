@@ -24,13 +24,14 @@ const RecipeImg = styled.img`
 `;
 
 export default function RecipeCard({
-  recipeImg='/RecipeOne.PNG',
+  recipeImg='/RecipeOne.png',
   recipe='Honey Drizzled Berry Banana Toast',
-  color = textcolor
+  color = textcolor,
+  click =()=>{}
 }) {
   const {theme} =useTheme();
 return (
-    <Cont onClick={() => {}}>
+    <Cont onClick={click}>
       <RecipeImg
         src={recipeImg} 
         alt='Recipe Image'
