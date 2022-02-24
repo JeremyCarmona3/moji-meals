@@ -8,7 +8,6 @@ import EmojiCardBig from '../comps/cards/EmojiCardBig'
 import HighlightCard from '../comps/cards/HighlightCard'
 import NutritionCard from '../comps/cards/NutritionCard'
 import AmountBar from '../comps/global/AmountBar'
-import Bar from '../comps/global/Bar'
 import Toggle from '../comps/buttons/Toggle'
 
 import { useTheme } from "../utils/provider";
@@ -53,64 +52,64 @@ export default function Settings({
   
   <Cont background ={bg[theme]}>
       <NavBar title='Settings'/>
-        <Headers color ={color[theme]}>Default Preferences</Headers>
+        <Headers color ={color[theme]}>Popular Data Preferences</Headers>
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text="Calories"/>
+          <Button text="Carbohydrates"/>
+          <Button text="Total Sugar"/>
+          <Button text="Protein"/>
+          <Button text="Total Fat"/>
+        </BtnRow>
+        <BtnRow>
+          <Button text="Total Fiber"/>
+          <Button text="Cholesterol"/>
+          <Button text="Calcium"/>
+          <Button text="Sodium"/>
+          <Button text="Potassium"/>
         </BtnRow>
 
-        <Headers color ={color[theme]}>Vitamin</Headers>
+        <Headers color ={color[theme]}>Additional Vitamins</Headers>
+        <BtnRow> 
+          <Button text="Vitamin A"/>
+          <Button text="Vitamin B6"/>
+          <Button text="Vitamin B12"/>
+          <Button text="Vitamin C"/>
+          <Button text="Vitamin D"/>
+        </BtnRow>
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text="Vitamin E"/>
+          <Button text="Vitamin K"/>
+          <Button text="Thiamin"/>
+          <Button text="Riboflavin"/>
+          <Button text="Niacin"/>
+        </BtnRow>
+        <BtnRow>
+          <Button text="Folate"/>
+          <Button text="Pantothenic Acid"/>
+          <Button text="Choline"/>
+          
         </BtnRow>
 
+        <Headers color ={color[theme]}>Additional Minerals</Headers>
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-        </BtnRow>
-
-        <Headers color ={color[theme]}>Minerals</Headers>
-        <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-        </BtnRow>
-
-        <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-        </BtnRow>
-
-        <Headers color ={color[theme]}>Fat</Headers>
-        <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text="Copper"/>
+          <Button text="Iron"/>
+          <Button text="Magnesium"/>
+          <Button text="Manganese"/>
+          <Button text="Phosphorus"/>
         </BtnRow>
 
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text="Selenium"/>
+          <Button text="Sodium"/>
+          <Button text="Zinc"/>
+        </BtnRow>
+
+        <Headers color ={color[theme]}>Specific Fats</Headers>
+        <BtnRow>
+          <Button text="Saturated Fat"/>
+          <Button text="Monounsaturated Fat"/>
+          <Button text="Polyunsaturated Fat"/>
         </BtnRow>
 
         <Toggle text={"DARK Mode"} Click={()=>setTheme('dark')}></Toggle>
