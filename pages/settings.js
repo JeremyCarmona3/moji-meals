@@ -23,23 +23,23 @@ const Cont = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100vw;
-  padding: 0 3%;
   justify-content: space-between;
-  background-color:${props=>props.background}
+  background-color:${props=>props.background};
 `;
 
 
 const BtnRow = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 5px;
+  padding: 0 5%;
 `;
 
 const Headers = styled.p`
+  padding: 0 5%;
   font-size: 24px;
-  color:${props=>props.color}
+  color:${props=>props.color};
 `;
 
 
@@ -56,61 +56,43 @@ export default function Settings({
         <Headers color ={color[theme]}>Default Preferences</Headers>
         <BtnRow>
           <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text='Carbohydrates' />
+          <Button text='Total Sugar' />
+          <Button text='Protein' />
+          <Button text='Total Fat' />
         </BtnRow>
 
         <Headers color ={color[theme]}>Vitamin</Headers>
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-        </BtnRow>
-
-        <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text='Vitamin B6' />
+          <Button text='Vitamin A' />
+          <Button text='Vitamin B12' />
+          <Button text='Vitamin C' />
+          <Button text='Vitamin D' />
         </BtnRow>
 
         <Headers color ={color[theme]}>Minerals</Headers>
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text='Total Fiber' />
+          <Button text='Cholesterol' />
+          <Button text='Thiamin' />
+          <Button text='Sodium' />
+          <Button text='Zinc' />
         </BtnRow>
 
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text='Calcium' />
+          <Button text='Iron' />
+          <Button text='Magnesium' />
+          <Button text='Manganese' />
+          <Button text='Potassium' />
         </BtnRow>
 
         <Headers color ={color[theme]}>Fat</Headers>
         <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-        </BtnRow>
-
-        <BtnRow>
-          <Button />
-          <Button />
-          <Button />
-          <Button />
-          <Button />
+          <Button text='Saturated Fat' />
+          <Button text='Monounsaturated Fat' />
+          <Button text='Polyunsaturated Fat' />
         </BtnRow>
 
         <Toggle text={"DARK Mode"} Click={()=>setTheme('dark')}></Toggle>

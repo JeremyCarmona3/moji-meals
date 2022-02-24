@@ -27,7 +27,7 @@ const EmojiCardCont = styled.div`
 const EmojiText = styled.p`
   display: flex;
   font-size: 20px;
-  color:${props=>props.color}
+  color:${props=>props.color};
 `
 const EmojiCardBig = ({
   emojiname="default",

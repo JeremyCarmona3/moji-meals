@@ -18,7 +18,7 @@ display:flex;
 flex-wrap:wrap;
 flex-direction:row;
 justify-content:center;
-background-color:${props=>props.background}
+background-color:${props=>props.background};
 `
 
 const ContOne = styled.div`
@@ -55,7 +55,7 @@ const TextCont = styled.div`
 display:flex;
 font-size:40px;
 color:orange;
-font-weight:bold
+font-weight:bold;
 `
 
 const InputCont = styled.div`
@@ -126,7 +126,9 @@ export default function Home({
    setnutFive(nutFive)
    setnutName(keyName)
 
+   window.scrollTo(0, 0);
   }
+
   
   const goBack = () => {
     setCondition('main');
@@ -190,14 +192,13 @@ if(status == 'main'){
   if(status == condition){
     return (<>
     <CardCont background ={bg[theme]}>
-     
      <NavBar 
         title='' 
         showBackBtn=''
         showLogo='none'
         backOnClick={goBack}
       />
-
+     
        <ContOne>
             <EmojiCardBig imagesrc= {emoji} emojiname ={condition}> </EmojiCardBig>
        </ContOne>
