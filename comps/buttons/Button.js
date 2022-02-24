@@ -9,6 +9,7 @@ const Container = styled.button`
 	border-radius: 22px;
 	border: ${props=>props.borderWidth} ${props=>props.borderType} ${props=>props.borderColor};
 	background: ${props=>props.bgColor};
+	margin: 10px;
 `;
 
 const ButtonText = styled.h1`
