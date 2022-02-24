@@ -7,8 +7,9 @@ const MainCont = styled.div`
     flex-direction: column;
     width:30%;
     min-height: 300px;
+    min-width: 300px;
     margin:20px;
-    padding: 30px;
+    padding:30px;
     background-color:#DDF4C3; 
     border-radius: 22px;
     overflow-wrap: break-word;
@@ -38,8 +39,8 @@ const FactCont = styled.div`
 const Bullet = styled.div`
     display: flex;
     border-radius: 50%;
-    height: 13px;
-    width: 13px;
+    min-height: 13px;
+    min-width: 13px;
     background: #0a0a0a;
     margin-left: 5%;
     margin-top: 5%;
@@ -47,6 +48,8 @@ const Bullet = styled.div`
 
 const HighlightCard = ({
     facttext="default",
+    facttext2='',
+    facttext3=''
   })=>{
     return<MainCont>
         <Header>Hightlights</Header>
@@ -57,12 +60,12 @@ const HighlightCard = ({
 
         <FactCont>
             <Bullet/>
-            <FactText>{facttext}</FactText>
+            <FactText>{facttext2}</FactText>
         </FactCont>
 
         <FactCont>
             <Bullet/>
-            <FactText>{facttext}</FactText>
+            <FactText>{facttext3}</FactText>
         </FactCont>
     </MainCont>
   }

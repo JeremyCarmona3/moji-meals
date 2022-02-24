@@ -102,6 +102,13 @@ export default function Home({
   const [nutFour,setnutFour] = useState('data')
   const [nutFive,setnutFive] = useState('data')
   const [nutName,setnutName] = useState('name')
+  const [nutFactOne,setnutFactOne] = useState('name')
+  const [nutFactTwo,setnutFactTwo] = useState('name')
+  const [nutFactThree,setnutFactThree] = useState('name')
+
+
+
+
   const [data,setData] =useState([])
   const [fruit,setFruit] = useState('lemon')
 
@@ -117,6 +124,13 @@ export default function Home({
    var nutThree = lists[i].TotalSugar
    var nutFour = lists[i].Protein
    var nutFive = lists[i].TotalFat
+   
+   var FactOne = lists[i].Fact1
+   var FactTwo = lists[i].Fact2
+   var FactThree = lists[i].Fact3
+   
+   console.log(FactOne)
+
    setEmoji(emoji)
    setCondition(name)
    setnutOne(nutOne)
@@ -125,6 +139,9 @@ export default function Home({
    setnutFour(nutFour)
    setnutFive(nutFive)
    setnutName(keyName)
+   setnutFactOne(FactOne)
+   setnutFactTwo(FactTwo)
+   setnutFactThree(FactThree)
 
    window.scrollTo(0, 0);
   }
@@ -204,7 +221,7 @@ if(status == 'main'){
        </ContOne>
        
       <ContTwo>
-          <HighlightCard/>
+          <HighlightCard facttext={nutFactOne} facttext2={nutFactTwo} facttext3={nutFactThree}/>
           <NutritionCard 
           nutNameOne ={nutName[2]}
           nutNameTwo ={nutName[3]}
