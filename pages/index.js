@@ -10,6 +10,27 @@ import { useTheme } from "../utils/provider";
 import { bgcolor} from '../comps/variable';
 import ax from 'axios'
 
+// const express = require('express');
+// const app = express();
+// const mongoose = require('mongoose');
+// const todorouter = require('./Routes/todo');
+
+// const config = require('./config')
+
+// app.use(express.json())
+
+// app.use(todorouter)
+
+// mongoose.connect(config.MONGOODB_URL, (err) => {
+//   if(err) return console.log(err)
+
+//   console.log('connected to db successfully')
+// })
+
+// app.listen(3000, () => {
+//   console.log('serving running on 3000')
+// })
+
 
 const CardCont = styled.div`
 width:100%;
