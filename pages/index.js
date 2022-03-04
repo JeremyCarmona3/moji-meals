@@ -10,6 +10,27 @@ import { useTheme } from "../utils/provider";
 import { bgcolor} from '../comps/variable';
 import ax from 'axios'
 
+// const express = require('express');
+// const app = express();
+// const mongoose = require('mongoose');
+// const todorouter = require('./Routes/todo');
+
+// const config = require('./config')
+
+// app.use(express.json())
+
+// app.use(todorouter)
+
+// mongoose.connect(config.MONGOODB_URL, (err) => {
+//   if(err) return console.log(err)
+
+//   console.log('connected to db successfully')
+// })
+
+// app.listen(3000, () => {
+//   console.log('serving running on 3000')
+// })
+
 
 const CardCont = styled.div`
 width:100%;
@@ -18,7 +39,7 @@ display:flex;
 flex-wrap:wrap;
 flex-direction:row;
 justify-content:center;
-background-color:${props=>props.background}
+background-color:${props=>props.background};
 `
 
 const ContOne = styled.div`
@@ -55,7 +76,7 @@ const TextCont = styled.div`
 display:flex;
 font-size:40px;
 color:orange;
-font-weight:bold
+font-weight:bold;
 `
 
 const InputCont = styled.div`
@@ -102,6 +123,13 @@ export default function Home({
   const [nutFour,setnutFour] = useState('data')
   const [nutFive,setnutFive] = useState('data')
   const [nutName,setnutName] = useState('name')
+  const [nutFactOne,setnutFactOne] = useState('name')
+  const [nutFactTwo,setnutFactTwo] = useState('name')
+  const [nutFactThree,setnutFactThree] = useState('name')
+
+
+
+
   const [data,setData] =useState([])
   const [fruit,setFruit] = useState('lemon')
 
@@ -117,6 +145,13 @@ export default function Home({
    var nutThree = lists[i].TotalSugar
    var nutFour = lists[i].Protein
    var nutFive = lists[i].TotalFat
+   
+   var FactOne = lists[i].Fact1
+   var FactTwo = lists[i].Fact2
+   var FactThree = lists[i].Fact3
+   
+   console.log(FactOne)
+
    setEmoji(emoji)
    setCondition(name)
    setnutOne(nutOne)
@@ -125,8 +160,13 @@ export default function Home({
    setnutFour(nutFour)
    setnutFive(nutFive)
    setnutName(keyName)
+   setnutFactOne(FactOne)
+   setnutFactTwo(FactTwo)
+   setnutFactThree(FactThree)
 
+   window.scrollTo(0, 0);
   }
+
   
   const goBack = () => {
     setCondition('main');
@@ -190,20 +230,19 @@ if(status == 'main'){
   if(status == condition){
     return (<>
     <CardCont background ={bg[theme]}>
-     
      <NavBar 
         title='' 
         showBackBtn=''
         showLogo='none'
         backOnClick={goBack}
       />
-
+     
        <ContOne>
             <EmojiCardBig imagesrc= {emoji} emojiname ={condition}> </EmojiCardBig>
        </ContOne>
        
       <ContTwo>
-          <HighlightCard/>
+          <HighlightCard facttext={nutFactOne} facttext2={nutFactTwo} facttext3={nutFactThree}/>
           <NutritionCard 
           nutNameOne ={nutName[2]}
           nutNameTwo ={nutName[3]}
