@@ -106,9 +106,6 @@ export default function Home({
   const [nutFactTwo,setnutFactTwo] = useState('name')
   const [nutFactThree,setnutFactThree] = useState('name')
 
-
-
-
   const [data,setData] =useState([])
   const [fruit,setFruit] = useState('lemon')
 
@@ -119,11 +116,12 @@ export default function Home({
    var emoji =lists[i].emoji
    var keyName = Object.getOwnPropertyNames(lists[i])
 
-   var nutOne = lists[i].Calories
-   var nutTwo = lists[i].Carbohydrates
-   var nutThree = lists[i].TotalSugar
-   var nutFour = lists[i].Protein
-   var nutFive = lists[i].TotalFat
+   var nutOne = lists[i]["Calories (kcal)"]
+   var nutTwo = lists[i]["Carbohydrates (g)"]
+   var nutThree = lists[i]['Total Sugar (g)']
+   var nutFour = lists[i]['Protein (g)']
+   var nutFive = lists[i]["Total Fat (g)"]
+  
    
    var FactOne = lists[i].Fact1
    var FactTwo = lists[i].Fact2
