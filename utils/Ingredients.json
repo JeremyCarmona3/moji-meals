@@ -1,5 +1,23 @@
 [
- {
+  {
+    "title": "Honey Drizzles Berry Banana Toast",
+    "image": "/RecipeOne.png",
+    "subtext1": "Step 1: In a pot, heat water to cook the noodles. Once it boils, add in the nodes and cook until half-cooked and chewy. Remove from the water and set.",
+    "subtext2": "Step 2: Heat a large pan over medium high. Add in the sesame oil. Once hot, add in the onion. Sauté over medium high heat for 2 minutes. Add in the garlic.",
+    "subtext3": "Step 3: Add eggplant into the pan with the bell peppers. Leave eggplant to cook over medium high heat until tender, around 6 minutes.",
+    "prep1": "Calories: 310",
+    "prep2": "Prep Time: 10 minutes",
+    "prep3": "Cook Time: 25 minutes",
+    "prep4": "Total Time: 35 minutes",
+    "Ingred1": "120g uncooked noodles",
+    "Ingred2": "2 small eggplants",
+    "Ingred3": "1 small onion",
+    "Ingred4": "4 garlic cloves",
+    "ingred5": "1 bell pepper",
+    "Ingred6": "3 tbsp soy sauce"
+  },
+
+  {
     "title": "Eggplant Chilli Noodles",
     "image": "/DN-Eggplant.jpg",
     "subtext1": "Step 1: In a pot, heat water to cook the noodles. Once it boils, add in the nodes and cook until half-cooked and chewy. Remove from the water and set.",
@@ -36,7 +54,7 @@
     "ingred6":"2 cups of celery, carrots, and onions"
   },
 
- {
+  {
     "title": "Tomato & Rice Soup",
     "image": "/tomato_rice_soup.jpeg",
     "subtext1":"Step 1: Heat the olive oil in a large soup pot. Add the onion and sauté for 7-8 minutes, until translucent",
@@ -55,7 +73,7 @@
     "ingred6":"¼ cup fresh basil"
   },
     
- {
+  {
     "title": "Spicy Carrot Fried Rice",
     "image": "/Spicy-Carrot-Fried-Rice.png",
     "subtext1":"Step 1: In a large skillet heat the oil. Add the onion and carrots and stir-fry over high heat until softened and beginning to brown, about 5 minutes.",
