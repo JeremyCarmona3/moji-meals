@@ -181,7 +181,7 @@ export default function Home({
     }
 
     if(timer === null){
-      timer = setTimeout( async () =>{
+      timer = setTimeout(async () =>{
         console.log("async call");
         const res = await ax.get('../api/emoji',{
           params:{
@@ -192,9 +192,6 @@ export default function Home({
         setData(res.data)
         setFruit(txt)
         console.log(fruit)
-
-    
-       
         if(txt == fruit){
           var userchoice = document.getElementById(txt)
           userchoice.style.border = "red solid 2px"
