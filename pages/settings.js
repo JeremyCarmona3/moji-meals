@@ -1,8 +1,10 @@
+import React, { useState } from 'react'
+import ax from 'axios';
 import Button from '../comps/buttons/Button'
 import NavBar from '../comps/global/Navbar'
 import Toggle from '../comps/buttons/Toggle'
 
-import { useTheme } from "../utils/provider";
+import { useTheme, useNut,useTSugar,useCalo,useData } from "../utils/provider";
 import {bgcolor,textcolor} from '../comps/variable'
 
 import styled from 'styled-components'
@@ -39,15 +41,75 @@ export default function Settings({
 }) {
   const {theme} =useTheme();
   const {setTheme} = useTheme();
+  const {datalist,setDataList} =useData();
+  const {sbc,setSBC} =useCalo();
+  const {carbo,setCar} =useNut();
+  const {tsugar,setTSugar} = useTSugar();
+
+  const [data,setData] =useState([]) 
+ // const [sbc, setSBC] = useState(false)
+  const [sbr_type,setSBRType] =useState('asc')
+
+  const Switch =(async()=>{
+        setSBRType(sbr_type === 'asc' ? 'desc':'asc');
+        setSBC([!sbc,"Calories (kcal)"]);
+        console.log("async call");
+        const res = await ax.get('../api/emoji',{
+          params:{
+            nuttype:sbc[1],
+            sort_type:sbr_type
+          }
+        })
+
+        setDataList(res.data)
+        console.log(res.data)
+        setData(res.data)
+        console.log(datalist)
+        // console.log(data)
+    })
+
+    const SwitchCarbo =(async()=>{
+      setSBRType(sbr_type === 'asc' ? 'desc':'asc');
+      setCar([!carbo,"Carbohydrates (g)"]);
+      console.log(carbo);
+      const res = await ax.get('../api/emoji',{
+        params:{
+          nuttype:carbo[1],
+          sort_type:sbr_type
+        }
+      })
+      setDataList(res.data)
+      console.log(res.data)
+      setData(res.data)
+      // console.log(data)
+  }) 
+
+
+  const SwitchTSugar =(async ()=>{
+    setSBRType(sbr_type === 'asc' ? 'desc':'asc');
+    setTSugar([!tsugar,"Total Sugar (g)"]);
+    console.log(tsugar);
+    const res = await ax.get('../api/emoji',{
+      params:{
+        nuttype:tsugar[1],
+        sort_type:sbr_type
+      }
+    })
+    setDataList(res.data)
+    console.log(res.data)
+    setData(res.data)
+    // console.log(data)
+}) 
+
   return (<div style ={styles}>
   
   <Cont background ={bg[theme]}>
       <NavBar title='Settings'/>
         <Headers color ={color[theme]}>Popular Data Preferences</Headers>
         <BtnRow>
-          <Button text="Calories"/>
-          <Button text="Carbohydrates"/>
-          <Button text="Total Sugar"/>
+          <Button onButtonClick={()=>Switch()} text="Calories"/>
+          <Button onButtonClick={()=>SwitchCarbo()} text="Carbohydrates"/>
+          <Button onButtonClick={()=>SwitchTSugar()}text="Total Sugar"/>
           <Button text="Protein"/>
           <Button text="Total Fat"/>
           <Button text="Total Fiber"/>

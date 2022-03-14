@@ -48,7 +48,8 @@ const Emoji = styled.p`
 `;
 
 export default function IngredientsCard({
-  color = textcolor
+  color = textcolor,
+  emoji = "🍉"
 }) {
   const {theme} =useTheme();
 return (
@@ -57,7 +58,7 @@ return (
       <IngContRow color ={color[theme]}>
         <IngCont>
           <IngRow>
-            <Emoji>🍇</Emoji>
+            <Emoji>{emoji}</Emoji>
             <Text color ={color[theme]}>Ingredients</Text>
           </IngRow>
           <IngRow>
