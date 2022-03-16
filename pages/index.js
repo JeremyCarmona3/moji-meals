@@ -6,7 +6,42 @@ import React, { useState } from 'react';
 import HighlightCard from '../comps/cards/HighlightCard';
 import NutritionCard from '../comps/cards/NutritionCard';
 import NavBar from '../comps/global/Navbar';
-import { useTheme } from "../utils/provider";
+import { 
+  useTheme, 
+  useData,
+  useNut,
+  useTSugar,
+  useCalo,
+  usePro,
+  useTotfat,
+  useTotfib,
+  useTotchol,
+  useTotcalc,
+  useTotsod,
+  useTotpot,
+  useTotvita,
+  useTotvitb6,
+  useTotvitb12,
+  useTotvitc,
+  useTotvitd,
+  useTotvite,
+  useTotvitk,
+  useTotthia,
+  useTotribo,
+  useTotnia,
+  useTotfolate,
+  useTotpanto,
+  useTotcholine,
+  useTotcopper,
+  useTotiron,
+  useTotmag,
+  useTotmang,
+  useTotphos,
+  useTotselen,
+  useTotsodium,
+  useTotzinc
+
+        } from "../utils/provider";
 import { bgcolor} from '../comps/variable';
 import ax from 'axios'
 
@@ -89,10 +124,42 @@ export default function Home({
   
   // const {setTheme} = useTheme();
   const {theme} =useTheme();
+  const {datalist,setDataList} =useData();
+  const {sbc,setSBC} =useCalo();
+  const {carbo,setCar} =useNut();
+  const {tsugar,setTSugar} = useTSugar();
+  const {pro, setPro} = usePro();
+  const {totfat, setTotfat} = useTotfat();
+  const {totfib, setTotfib} = useTotfib();
+  const {totchol, setTotchol} = useTotchol();
+  const {totcalc, setTotcalc} = useTotcalc();
+  const {totsod, setTotsod} = useTotsod();
+  const {totpot, setTotpot} = useTotpot();
+  const {totvita, setTotvita} = useTotvita();
+  const {totvitb6, setTotvitb6} = useTotvitb6();
+  const {totvitb12, setTotvitb12} = useTotvitb12();
+  const {totvitc, setTotvitc} = useTotvitc();
+  const {totvitd, setTotvitd} = useTotvitd();
+  const {totvite, setTotvite} = useTotvite();
+  const {totvitk, setTotvitk} = useTotvitk();
+  const {totthia, setTotthia} = useTotthia();
+  const {totribo, setTotribo} = useTotribo();
+  const {totnia, setTotnia} = useTotnia();
+  const {totfolate, setTotfolate} = useTotfolate();
+  const {totpanto, setTotpanto} = useTotpanto();
+  const {totcholine, setTotcholine} = useTotcholine();
+  const {totcopper, setTotcopper} = useTotcopper();
+  const {totiron, setTotiron} = useTotiron();
+  const {totmag, setTotmag} = useTotmag();
+  const {totmang, setTotmang} = useTotmang();
+  const {totphos, setTotphos} = useTotphos();
+  const {totselen, setTotselen} = useTotselen();
+  const {totsodium, setTotsodium} = useTotsodium();
+  const {totzinc, setTotzinc} = useTotzinc();
 
 
-  var lists =[]
-  lists = Emoji
+  // var lists =[]
+  const [lists,setLists]  = useState(Emoji) 
   const [condition,setCondition] = useState('main') 
   const [emoji,setEmoji] =useState('🍇')
   const [nutOne,setnutOne] = useState('data')
@@ -106,10 +173,11 @@ export default function Home({
   const [nutFactThree,setnutFactThree] = useState('name')
 
 
-
-
-  const [data,setData] =useState([])
   const [fruit,setFruit] = useState('lemon')
+
+  const [sbr_type,setSBRType] =useState('asc')
+  // const [count,setCount] =useState(1)
+  // const [sbc, setSBC] = useState(([false,"Calories (kcal)"]))
 
   var status = condition
   
@@ -118,11 +186,12 @@ export default function Home({
    var emoji =lists[i].emoji
    var keyName = Object.getOwnPropertyNames(lists[i])
 
-   var nutOne = lists[i].Calories
-   var nutTwo = lists[i].Carbohydrates
-   var nutThree = lists[i].TotalSugar
-   var nutFour = lists[i].Protein
-   var nutFive = lists[i].TotalFat
+   var nutOne = lists[i]["Calories (kcal)"]
+   var nutTwo = lists[i]["Carbohydrates (g)"]
+   var nutThree = lists[i]['Total Sugar (g)']
+   var nutFour = lists[i]['Protein (g)']
+   var nutFive = lists[i]["Total Fat (g)"]
+  
    
    var FactOne = lists[i].Fact1
    var FactTwo = lists[i].Fact2
@@ -150,8 +219,6 @@ export default function Home({
     setCondition('main');
   }
  
-
-
   const inputFilter =async(txt)=>{
     console.log(txt)
    
@@ -161,7 +228,8 @@ export default function Home({
     }
 
     if(timer === null){
-      timer = setTimeout( async () =>{
+      timer = setTimeout(async () =>{
+      
         console.log("async call");
         const res = await ax.get('../api/emoji',{
           params:{
@@ -169,24 +237,29 @@ export default function Home({
           }
         })
         console.log(res.data)
-        setData(res.data)
+        // setData(res.data)
         setFruit(txt)
         console.log(fruit)
-
-    
-       
         if(txt == fruit){
           var userchoice = document.getElementById(txt)
           userchoice.style.border = "red solid 2px"
          }
-   
 
       },1000) 
     }
   } 
 
-
-
+  const filter =() =>{
+    console.log("async call");
+    setSBRType(sbr_type === 'asc' ? 'desc':'asc')
+    setLists(datalist)
+    if(sbr_type === 'desc'){
+      lists.reverse()
+    }
+    console.log(sbr_type)
+    // console.log(lists)
+}
+ 
 
 if(status == 'main'){
     return (<>
@@ -200,7 +273,8 @@ if(status == 'main'){
           <InputCont>
             <TextInput onChange={(e)=>inputFilter(e.target.value)}></TextInput>
           </InputCont>
-          {lists.map((o,i)=><EmojiCard id = {o.name} key={i} emoji ={o.emoji} onclick ={()=>ShowDetails(i)}></EmojiCard>)}
+          <button style ={{backgroundColor:sbr_type == "asc"? 'pink':'white'}} onClick={()=>filter()}>Asc desc</button>
+          {lists.map((o,i)=><EmojiCard id = {o.name} key={i} emoji ={o.emoji} onclick ={()=>ShowDetails(i)}></EmojiCard>)} 
         </CardCont>
    </>)
   }
@@ -236,6 +310,7 @@ if(status == 'main'){
   </CardCont>
    </>)
   }
+
 
 
 
