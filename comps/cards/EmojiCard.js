@@ -60,14 +60,16 @@ const default_data =
       
 const EmojiCard = ({
 emoji = default_data.emoji,
+calories = default_data["Calories (kcal)"],
 onclick=()=>{},
 display ="flex",
 border = "",
 id = "lemon" ,
 })=>{
     return(
-        <EmojiCont id = {id} onClick={onclick} display ={display} border = {border}>
+        <EmojiCont id = {id} onClick={onclick} display ={display} border = {border} calories = {calories}>
             <EmojiSize>{emoji}</EmojiSize>  
+            {/* <EmojiSize>{calories}</EmojiSize>   */}
         </EmojiCont>
     
     )
