@@ -4,6 +4,7 @@ import Button from '../comps/buttons/Button'
 import NavBar from '../comps/global/Navbar'
 import Toggle from '../comps/buttons/Toggle'
 
+<<<<<<< HEAD
 import { useTheme, 
   useNut,
   useTSugar,
@@ -37,6 +38,9 @@ import { useTheme,
   useTotselen,
   useTotsodium,
   useTotzinc } from "../utils/provider";
+=======
+import { useTheme, useNut,useTSugar,useCalo,useData } from "../utils/provider";
+>>>>>>> 0e957ccd0428a0365cc05edecaff1f75ef300d4c
 import {bgcolor,textcolor} from '../comps/variable'
 
 import styled from 'styled-components'
@@ -77,6 +81,7 @@ export default function Settings({
   const {sbc,setSBC} =useCalo();
   const {carbo,setCar} =useNut();
   const {tsugar,setTSugar} = useTSugar();
+<<<<<<< HEAD
   const {pro, setPro} = usePro();
   const {totfat, setTotfat} = useTotfat();
   const {totfib, setTotfib} = useTotfib();
@@ -105,6 +110,8 @@ export default function Settings({
   const {totselen, setTotselen} = useTotselen();
   const {totsodium, setTotsodium} = useTotsodium();
   const {totzinc, setTotzinc} = useTotzinc();
+=======
+>>>>>>> 0e957ccd0428a0365cc05edecaff1f75ef300d4c
 
   const [data,setData] =useState([]) 
  // const [sbc, setSBC] = useState(false)
@@ -128,6 +135,7 @@ export default function Settings({
         // console.log(data)
     })
 
+<<<<<<< HEAD
 
 
   const SwitchTotfib =(async()=>{
@@ -572,6 +580,8 @@ const SwitchTotzinc =(async()=>{
 
     
 
+=======
+>>>>>>> 0e957ccd0428a0365cc05edecaff1f75ef300d4c
     const SwitchCarbo =(async()=>{
       setSBRType(sbr_type === 'asc' ? 'desc':'asc');
       setCar([!carbo,"Carbohydrates (g)"]);
@@ -604,6 +614,7 @@ const SwitchTotzinc =(async()=>{
     setData(res.data)
     // console.log(data)
 }) 
+<<<<<<< HEAD
 const SwitchPro =(async ()=>{
   setSBRType(sbr_type === 'asc' ? 'desc':'asc');
   setPro([!pro,"Protein (g)"]);
@@ -635,6 +646,8 @@ const SwitchTotfat =(async ()=>{
   setData(res.data)
   // console.log(data)
 }) 
+=======
+>>>>>>> 0e957ccd0428a0365cc05edecaff1f75ef300d4c
 
   return (<div style ={styles}>
   
@@ -645,6 +658,7 @@ const SwitchTotfat =(async ()=>{
           <Button onButtonClick={()=>Switch()} text="Calories"/>
           <Button onButtonClick={()=>SwitchCarbo()} text="Carbohydrates"/>
           <Button onButtonClick={()=>SwitchTSugar()}text="Total Sugar"/>
+<<<<<<< HEAD
           <Button onButtonClick={()=>SwitchPro()} text="Protein"/>
           <Button onButtonClick={()=>SwitchTotfat()} text="Total Fat"/>
           <Button onButtonClick={()=>SwitchTotfib()} text="Total Fiber"/>
@@ -652,6 +666,15 @@ const SwitchTotfat =(async ()=>{
           <Button onButtonClick={()=>SwitchTotcalc()} text="Calcium"/>
           <Button onButtonClick={()=>SwitchTotsod()} text="Sodium"/>
           <Button onButtonClick={()=>SwitchTotpot()} text="Potassium"/>
+=======
+          <Button text="Protein"/>
+          <Button text="Total Fat"/>
+          <Button text="Total Fiber"/>
+          <Button text="Cholesterol"/>
+          <Button text="Calcium"/>
+          <Button text="Sodium"/>
+          <Button text="Potassium"/>
+>>>>>>> 0e957ccd0428a0365cc05edecaff1f75ef300d4c
         </BtnRow>
 
         <Headers color ={color[theme]}>Additional Vitamins</Headers>
