@@ -39,7 +39,10 @@ import {
   useTotphos,
   useTotselen,
   useTotsodium,
-  useTotzinc
+  useTotzinc,
+  useTotsfat,
+  useTotmfat,
+  useTotpfat
 
         } from "../utils/provider";
 import { bgcolor} from '../comps/variable';
@@ -156,8 +159,9 @@ export default function Home({
   const {totselen, setTotselen} = useTotselen();
   const {totsodium, setTotsodium} = useTotsodium();
   const {totzinc, setTotzinc} = useTotzinc();
-
-
+  const {totsfat, setTotsfat} = useTotsfat();
+  const {totmfat, setTotmfat} = useTotmfat();
+  const {totpfat, setTotpfat} = useTotpfat();
   // var lists =[]
   const [lists,setLists]  = useState(Emoji) 
   const [condition,setCondition] = useState('main') 

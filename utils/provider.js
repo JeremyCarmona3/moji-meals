@@ -168,6 +168,25 @@ const TotalSugarStates ={
     setTSugar:()=>{},
 }
 
+//alicia additions
+
+const SaturatedFatsStates = {
+  totsfat: false,
+  setTotsfat: ()=>{},
+}
+
+const MonounsaturatedFatsStates = {
+  totmfat: false,
+  setTotmfat: ()=>{},
+}
+
+const PolyunsaturatedFatsStates = {
+  totpfat: false,
+  setTotpfat: ()=>{},
+}
+
+//end of alicia additions
+
 const MyContextdata = createContext(SortedData);
 const MyContext = createContext(initialStates);
 const MyContext1 = createContext(CaloStates);
@@ -201,6 +220,9 @@ const MyContext28 = createContext(TotalPhosStates);
 const MyContext29 = createContext(TotalSelenStates);
 const MyContext30 = createContext(TotalSodiumStates);
 const MyContext31 = createContext(TotalZincStates);
+const MyContext32 = createContext(SaturatedFatsStates);
+const MyContext33 = createContext(MonounsaturatedFatsStates);
+const MyContext34 = createContext(PolyunsaturatedFatsStates);
 
 export default function AppProvider({children}){
     const [theme,setTheme] = useState('light')
@@ -236,6 +258,9 @@ export default function AppProvider({children}){
     const [totselen, setTotselen] = useState([false, "Selenium ug"])
     const [totsodium, setTotsodium] = useState([false, "Sodium g"])
     const [totzinc, setTotzinc] = useState([false, "Zinc mg"])
+    const [totsfat, setTotsfat] = useState([false, "Saturated Fat g"])
+    const [totmfat, setTotmfat] = useState([false, "Monounsaturated Fat g"])
+    const [totpfat, setTotpfat] = useState([false, "Polyunsaturated Fat g"])
 
 
     return <MyContext.Provider value={{theme,setTheme}}>
@@ -270,8 +295,13 @@ export default function AppProvider({children}){
             <MyContext28.Provider value={{totphos,setTotphos}}>
             <MyContext29.Provider value={{totselen,setTotselen}}>
             <MyContext30.Provider value={{totsodium,setTotsodium}}>
-            <MyContext31.Provider value={{totzinc,setTotzinc}}>
-
+            <MyContext31.Provider value={{totzinc,setTotzinc}}>  
+            <MyContext32.Provider value={{totsfat,setTotsfat}}>
+            </MyContext32.Provider>
+            <MyContext33.Provider value={{totmfat,setTotmfat}}>
+            </MyContext33.Provider>
+            <MyContext34.Provider value={{totpfat,setTotpfat}}>
+            </MyContext34.Provider>
                {children}
             </MyContext31.Provider>
             </MyContext30.Provider>
@@ -304,6 +334,7 @@ export default function AppProvider({children}){
             </MyContext3.Provider>    
             </MyContext2.Provider>
             </MyContext1.Provider>
+
             </MyContextdata.Provider>
     </MyContext.Provider>
 }
@@ -441,4 +472,14 @@ export default function AppProvider({children}){
     return useContext(MyContext31);
   }
 
-  
+  export const useTotsfat = () =>{
+    return useContext(MyContext32);
+  }
+
+  export const useTotmfat = () =>{
+    return useContext(MyContext33);
+  }
+
+  export const useTotpfat = () =>{
+    return useContext(MyContext34);
+  }
