@@ -11,7 +11,39 @@ import {
   useData,
   useNut,
   useTSugar,
-  useCalo
+  useCalo,
+  usePro,
+  useTotfat,
+  useTotfib,
+  useTotchol,
+  useTotcalc,
+  useTotsod,
+  useTotpot,
+  useTotvita,
+  useTotvitb6,
+  useTotvitb12,
+  useTotvitc,
+  useTotvitd,
+  useTotvite,
+  useTotvitk,
+  useTotthia,
+  useTotribo,
+  useTotnia,
+  useTotfolate,
+  useTotpanto,
+  useTotcholine,
+  useTotcopper,
+  useTotiron,
+  useTotmag,
+  useTotmang,
+  useTotphos,
+  useTotselen,
+  useTotsodium,
+  useTotzinc,
+  useTotsfat,
+  useTotmfat,
+  useTotpfat
+
         } from "../utils/provider";
 import { bgcolor} from '../comps/variable';
 import ax from 'axios'
@@ -99,8 +131,37 @@ export default function Home({
   const {sbc,setSBC} =useCalo();
   const {carbo,setCar} =useNut();
   const {tsugar,setTSugar} = useTSugar();
-
-
+  const {pro, setPro} = usePro();
+  const {totfat, setTotfat} = useTotfat();
+  const {totfib, setTotfib} = useTotfib();
+  const {totchol, setTotchol} = useTotchol();
+  const {totcalc, setTotcalc} = useTotcalc();
+  const {totsod, setTotsod} = useTotsod();
+  const {totpot, setTotpot} = useTotpot();
+  const {totvita, setTotvita} = useTotvita();
+  const {totvitb6, setTotvitb6} = useTotvitb6();
+  const {totvitb12, setTotvitb12} = useTotvitb12();
+  const {totvitc, setTotvitc} = useTotvitc();
+  const {totvitd, setTotvitd} = useTotvitd();
+  const {totvite, setTotvite} = useTotvite();
+  const {totvitk, setTotvitk} = useTotvitk();
+  const {totthia, setTotthia} = useTotthia();
+  const {totribo, setTotribo} = useTotribo();
+  const {totnia, setTotnia} = useTotnia();
+  const {totfolate, setTotfolate} = useTotfolate();
+  const {totpanto, setTotpanto} = useTotpanto();
+  const {totcholine, setTotcholine} = useTotcholine();
+  const {totcopper, setTotcopper} = useTotcopper();
+  const {totiron, setTotiron} = useTotiron();
+  const {totmag, setTotmag} = useTotmag();
+  const {totmang, setTotmang} = useTotmang();
+  const {totphos, setTotphos} = useTotphos();
+  const {totselen, setTotselen} = useTotselen();
+  const {totsodium, setTotsodium} = useTotsodium();
+  const {totzinc, setTotzinc} = useTotzinc();
+  const {totsfat, setTotsfat} = useTotsfat();
+  const {totmfat, setTotmfat} = useTotmfat();
+  const {totpfat, setTotpfat} = useTotpfat();
   // var lists =[]
   const [lists,setLists]  = useState(Emoji) 
   const [condition,setCondition] = useState('main') 
