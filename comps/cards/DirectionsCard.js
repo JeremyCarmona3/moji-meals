@@ -44,7 +44,7 @@ export default function DirectionsCard({
   direction5 = "direction5",
   direction6 = "direction6",
   direction7 = "direction7",
-  direction8 = "direction8"
+  direction8 = ""
 
 }) {
   const {theme} =useTheme();
