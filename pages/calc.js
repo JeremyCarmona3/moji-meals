@@ -12,6 +12,7 @@ import { DndProvider } from 'react-dnd'
 
 // import Book from '@/comps/Book';
 import Dropzone from '../comps/Dropzone';
+import Button from '../comps/buttons/Button'
 
 import EmojiDnd from '../comps/cards/EmojiDnd';
 import styled from 'styled-components';
@@ -38,6 +39,7 @@ export default function Calculator() {
   const [cals, setCals] = useState([]);
   
   
+  
   const check =()=>{
     // console.log(favs[4]["Calories (kcal)"])
     var s = Object.values(favs)
@@ -45,10 +47,8 @@ export default function Calculator() {
     for(let i = 0; i < s.length; i++){
       console.log(s[i]["Calories (kcal)"])
       sum += s[i]["Calories (kcal)"];
-    
     }
-    console.log(sum)
-   
+    setCals(sum);
   }
 
   return (
@@ -74,14 +74,8 @@ export default function Calculator() {
           setFavs({
             ...favs
           })
-          
-          cals[item.name] =item;
-          setCals(
-            ...cals,
-            )
         }} >
           <h3>Emoji Calculator</h3>
-
           {Object.values(favs).map((o,i)=><EmojiDnd key={o.emoji} item={o}>
             <EmojiCont key={i}>
               {o.emoji} - Calories: {o["Calories (kcal)"]}
@@ -89,10 +83,11 @@ export default function Calculator() {
           </EmojiDnd> 
           )}
         </Dropzone>
-
-        <button onClick={check}></button>
+        <Button onButtonClick={check}></Button>
 
 			</DndProvider>
+
+      <div>{cals}</div>
     </div>
   )
 }
