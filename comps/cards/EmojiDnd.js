@@ -43,7 +43,7 @@ const EmojiDnd = ({
     })
   }))
 
-  console.log(coords)
+//   console.log(coords)
   //console.log(isDragging);
 
   const sty = {

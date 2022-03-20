@@ -35,10 +35,20 @@ export default function Calculator() {
   lists = Emoji
   
   const [favs, setFavs] = useState([]);
+  const [cals, setCals] = useState([]);
+  
+  
   const check =()=>{
     // console.log(favs[4]["Calories (kcal)"])
-    console.log(favs)
-  
+    var s = Object.values(favs)
+    var sum =0
+    for(let i = 0; i < s.length; i++){
+      console.log(s[i]["Calories (kcal)"])
+      sum += s[i]["Calories (kcal)"];
+    
+    }
+    console.log(sum)
+   
   }
 
   return (
@@ -60,10 +70,15 @@ export default function Calculator() {
 
         <Dropzone 
         onDropItem={(item)=>{
-          favs[item.FoodId] = item;
+          favs[item.name] = item;
           setFavs({
             ...favs
           })
+          
+          cals[item.name] =item;
+          setCals(
+            ...cals,
+            )
         }} >
           <h3>Emoji Calculator</h3>
 
