@@ -11,7 +11,7 @@ import { TouchBackend } from 'react-dnd-touch-backend'
 import { DndProvider } from 'react-dnd'
 
 // import Book from '@/comps/Book';
-import Dropzone from '../comps/Dropzone';
+import Dropzone from '../comps/dropzone';
 
 import EmojiDnd from '../comps/cards/EmojiDnd';
 import styled from 'styled-components';
