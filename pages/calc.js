@@ -14,8 +14,8 @@ export default function Board() {
   const r = useRouter();
   const {uuid} = r.query;
   const [lists,setLists]  = useState(Emoji) 
-  const[cns,setCns]=useState({})
-  const [fcode,setFcode] =useState(1)
+  const [cns,setCns]=useState({})
+  const [fcode,setFcode] =useState(0)
 
   const initialBag = [
     "plasticbag",
@@ -24,18 +24,18 @@ export default function Board() {
   const [bag,setBag] =useState([])
   
   // console.log(cns)
-  // console.log(lists[fcode].emoji)
+  console.log(lists[fcode].emoji)
   console.log(fcode)
   console.log(bag)
 
 
-  useEffect(()=>{
-      const Check =()=>{
-      setBag({...bag},fcode)
-      }
-      Check()
-  }
-,[fcode])
+//   useEffect(()=>{
+//       const Check =()=>{
+//       setBag({...bag},'jel')
+//       }
+//       Check()
+//   }
+// ,[fcode])
  
 
   const HandleUpdateCard = (id) =>{
@@ -48,10 +48,10 @@ export default function Board() {
     })
   }
 
-
-  // const scan = ()=>{
-  //   setBag(...bag,lists[fcode].emoji);
-  // }
+  const scan = ()=>{
+    console.log('j')
+    setBag([...bag, { name: fcode }]);
+  }
 
   return (
     <div>
@@ -62,31 +62,18 @@ export default function Board() {
           
           <Dropzone onDropItem ={(item)=>{
              const c_id = uuidv4(); 
-             
-
               setCns((prev)=>({
               ...prev,
               [c_id]:{id:c_id}
-              
             }))
     
           }}
-            //  onShift ={(item) =>{
-            //  const shopping = lists[fcode].emoji
-             
-            //  setBag((prev)=>({
-            //    ...prev,
-            //    ["food"]:{"food":shopping}
-
-            //  }));
-          
-
-
-            //  }}
+              onShift ={scan}
             >
             <h3>Board Notes  {uuid}</h3>
 
            {Object.values(cns).map((o,i)=>
+           
            <CardList 
             type ='boardnotes' 
             key ={i}
@@ -98,8 +85,11 @@ export default function Board() {
             >
             </CardList>)
             } 
-
-      
+            
+            <CardList 
+            type ='boardnotes' 
+            emoji ={lists[fcode].emoji}
+            />
            {/* <div 
             type ='boardnotes' 
             >
@@ -110,12 +100,12 @@ export default function Board() {
           <div>
               <h3>Menu</h3> 
           
-            {lists.map((o,i)=><CardList key ={i} emoji={o.emoji} foodcount ={i} onUpdateFood ={()=>{setFcode(i)}} ></CardList>)}
+            {lists.map((o,i)=><CardList key ={i} emoji={o.emoji} foodcount ={i} onUpdateFood ={()=>{setFcode(i)}}></CardList>)}
           
           
           <div>
-             <div>{lists[fcode].emoji}</div>
-             
+    
+              <div>{lists[fcode].emoji}</div>
           </div>
          
 
