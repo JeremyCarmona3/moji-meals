@@ -48,7 +48,13 @@ const Emoji = styled.p`
 `;
 
 export default function IngredientsCard({
-  color = textcolor
+  color = textcolor,
+  emoji1 = "🍉",
+  emoji2 = "🍉",
+  emoji3 = "🍉",
+  emoji4 = "🍉",
+  emoji5 = "🍉",
+  emoji6 = "🍉",
 }) {
   const {theme} =useTheme();
 return (
@@ -57,29 +63,29 @@ return (
       <IngContRow color ={color[theme]}>
         <IngCont>
           <IngRow>
-            <Emoji>🍇</Emoji>
+            <Emoji>{emoji1}</Emoji>
             <Text color ={color[theme]}>Ingredients</Text>
           </IngRow>
           <IngRow>
-            <Emoji>🍇</Emoji>
+            <Emoji>{emoji2}</Emoji>
             <Text color ={color[theme]}>Ingredients</Text>
           </IngRow>
           <IngRow>
-            <Emoji>🍇</Emoji>
+            <Emoji>{emoji3}</Emoji>
             <Text color ={color[theme]}>Ingredients</Text>
           </IngRow>
         </IngCont>
         <IngCont>
           <IngRow>
-            <Emoji>🍇</Emoji>
+            <Emoji>{emoji4}</Emoji>
             <Text color ={color[theme]}>Ingredients</Text>
           </IngRow>
           <IngRow>
-            <Emoji>🍇</Emoji>
+            <Emoji>{emoji5}</Emoji>
             <Text color ={color[theme]}>Ingredients</Text>
           </IngRow>
           <IngRow>
-            <Emoji>🍇</Emoji>
+            <Emoji>{emoji6}</Emoji>
             <Text color ={color[theme]}>Ingredients</Text>
           </IngRow>
         </IngCont>

@@ -36,7 +36,16 @@ const Text = styled.p`
 `;
 
 export default function DirectionsCard({
-  color = textcolor
+  color = textcolor,
+  direction1 = "direction1",
+  direction2 = "direction2",
+  direction3 = "direction3",
+  direction4 = "direction4",
+  direction5 = "direction5",
+  direction6 = "direction6",
+  direction7 = "direction7",
+  direction8 = ""
+
 }) {
   const {theme} =useTheme();
 return (
@@ -45,17 +54,17 @@ return (
       <IngContRow color ={color[theme]}>
         <DirCont>
           <Text color ={color[theme]}>Preps</Text>
-          <Text color ={color[theme]}>Directions here</Text>
-          <Text color ={color[theme]}>Directions here</Text>
-          <Text color ={color[theme]}>Directions here</Text>
-          <Text color ={color[theme]}>Directions here</Text>
+          <Text color ={color[theme]}>{direction1}</Text>
+          <Text color ={color[theme]}>{direction2}</Text>
+          <Text color ={color[theme]}>{direction3}</Text>
+          <Text color ={color[theme]}>{direction4}</Text>
         </DirCont>
         <DirCont>
           <Text color ={color[theme]}>Steps</Text>
-          <Text color ={color[theme]}>Directions here</Text>
-          <Text color ={color[theme]}>Directions here</Text>
-          <Text color ={color[theme]}>Directions here</Text>
-          <Text color ={color[theme]}>Directions here</Text>
+          <Text color ={color[theme]}>{direction5}</Text>
+          <Text color ={color[theme]}>{direction6}</Text>
+          <Text color ={color[theme]}>{direction7}</Text>
+          <Text color ={color[theme]}>{direction8}</Text>
         </DirCont>
       </IngContRow>
     </Cont>
