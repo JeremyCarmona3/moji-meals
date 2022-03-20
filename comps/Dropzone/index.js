@@ -1,27 +1,29 @@
 import { useDrag, useDrop } from 'react-dnd'
-import React, {useState,useEffect} from 'react';
-import styled  from 'styled-components'
+import styled from 'styled-components'
 
-const DropCont =styled.div`
-height:70vh;
-background:${({bg})=>bg || '#ccc'};
-width:100%;
-postion:relative;
-`
-// const [shop,setShop] =useState([])
-
+const DropCont = styled.div`
+  position: ${({position})=>position};
+  bottom: 0px;
+  left: 0px;
+  background: ${({bg})=>bg || 'aqua'};
+  height: 300px;
+  width: 100vw;
+  z-index: 1;
+  overflow-y: auto;
+`;
 
 const Dropzone = ({
-  //props 
-  children =null,
+  //props
+  children=null,
   onDropItem=()=>{},
-  onShift =()=>{},
+  position='fixed'
 }) => {
 	const [{ canDrop, isOver }, drop] = useDrop(() => ({
-    accept: "emoji",
+    // The type (or types) to accept - strings or symbols
+    accept: 'emoji',
     drop:(item, monitor)=>{
-     onDropItem(item)
-     onShift(item)
+      console.log('the book that was dropped', item);
+      onDropItem(item);
     },
     // Props to collect
     collect: (monitor) => ({
@@ -31,11 +33,12 @@ const Dropzone = ({
   }))
 
 	return <DropCont
-			      ref={drop}
-            bg={canDrop && isOver ? '#999' :'#DDD'}>
-            {children}
-     
-		    </DropCont>
+			ref={drop}
+      bg={canDrop && isOver ? 'pink' : 'aqua'}
+      position={position}
+		>
+      {children}
+		</DropCont>
 }
 
 export default Dropzone

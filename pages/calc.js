@@ -1,118 +1,83 @@
-import { useRouter } from "next/router";
-import { v4 as uuidv4 } from 'uuid';
-import { TouchBackend } from 'react-dnd-touch-backend'
-import { DndProvider } from 'react-dnd'
-import CardList from "../comps/CardList";
-import Dropzone from "../comps/Dropzone";
-import { useState,useEffect } from "react";
+import Head from 'next/head'
+import ax from 'axios';
 import Emoji from '../utils/Emoji.json'
-import ax from 'axios'
-import { IoSearchCircle } from "react-icons/io5";
 
+import React, {useState} from 'react';
+import { useRouter } from 'next/router';
+// import { v4 as uuidv4 } from 'uuid';
 
-export default function Board() {
-  const r = useRouter();
-  const {uuid} = r.query;
-  const [lists,setLists]  = useState(Emoji) 
-  const [cns,setCns]=useState({})
-  const [fcode,setFcode] =useState(0)
+import { TouchBackend } from 'react-dnd-touch-backend'
+//import { HTML5Backend } from 'react-dnd-html5-backend'
+import { DndProvider } from 'react-dnd'
 
-  const initialBag = [
-    "plasticbag",
-  ];
+// import Book from '@/comps/Book';
+import Dropzone from '../comps/Dropzone';
 
-  const [bag,setBag] =useState([])
+import EmojiDnd from '../comps/cards/EmojiDnd';
+import styled from 'styled-components';
+
+const EmojiCont = styled.div`
+  background: teal;
+  padding: 10px;
+  margin: 10px;
+  width: fit-content;
+`;
+
+const CalcCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  background: #FAD;
+`;
+
+export default function Calculator() {
+
+  var lists = []
+  lists = Emoji
   
-  // console.log(cns)
-  console.log(lists[fcode].emoji)
-  console.log(fcode)
-  console.log(bag)
-
-
-//   useEffect(()=>{
-//       const Check =()=>{
-//       setBag({...bag},'jel')
-//       }
-//       Check()
-//   }
-// ,[fcode])
- 
-
-  const HandleUpdateCard = (id) =>{
-    cns[id] ={
-      ...cns[id],
-     
-    },
-    setCns({
-      ...cns
-    })
-  }
-
-  const scan = ()=>{
-    console.log('j')
-    setBag([...bag, { name: fcode }]);
+  const [favs, setFavs] = useState([]);
+  const check =()=>{
+    // console.log(favs[4]["Calories (kcal)"])
+    console.log(favs)
+  
   }
 
   return (
     <div>
-      <DndProvider backend ={TouchBackend} options={{
-       enableTouchEvents:false,
-       enableMouseEvents:true
-      }}>
-          
-          <Dropzone onDropItem ={(item)=>{
-             const c_id = uuidv4(); 
-              setCns((prev)=>({
-              ...prev,
-              [c_id]:{id:c_id}
-            }))
-    
-          }}
-              onShift ={scan}
+      <DndProvider backend={TouchBackend} options={{
+				enableTouchEvents:false,
+				enableMouseEvents:true
+			}}>
+        <CalcCont>
+          {lists.map((o, i)=>
+            <EmojiDnd
+              key={i}
+              item={o}
             >
-            <h3>Board Notes  {uuid}</h3>
+              {o.emoji}
+            </EmojiDnd>
+          )}
+        </CalcCont>
 
-           {Object.values(cns).map((o,i)=>
-           
-           <CardList 
-            type ='boardnotes' 
-            key ={i}
-            id ={o.id}
-            emoji ={lists[fcode].emoji}
-            cardpos={o.pos}
-            onUpdateCard={(obj)=>HandleUpdateCard(o.id,obj)}
-            onUpdateEmoji ={(obj)=>UpdateEmoji(i,obj)}
-            >
-            </CardList>)
-            } 
-            
-            <CardList 
-            type ='boardnotes' 
-            emoji ={lists[fcode].emoji}
-            />
-           {/* <div 
-            type ='boardnotes' 
-            >
-            {lists[fcode].emoji}</div> */}
+        <Dropzone 
+        onDropItem={(item)=>{
+          favs[item.FoodId] = item;
+          setFavs({
+            ...favs
+          })
+        }} >
+          <h3>Emoji Calculator</h3>
 
-          </Dropzone>
+          {Object.values(favs).map((o,i)=><EmojiDnd key={o.emoji} item={o}>
+            <EmojiCont key={i}>
+              {o.emoji} - Calories: {o["Calories (kcal)"]}
+            </EmojiCont>
+          </EmojiDnd> 
+          )}
+        </Dropzone>
 
-          <div>
-              <h3>Menu</h3> 
-          
-            {lists.map((o,i)=><CardList key ={i} emoji={o.emoji} foodcount ={i} onUpdateFood ={()=>{setFcode(i)}}></CardList>)}
-          
-          
-          <div>
-    
-              <div>{lists[fcode].emoji}</div>
-          </div>
-         
+        <button onClick={check}></button>
 
-
-          </div>
-
-      </DndProvider>
+			</DndProvider>
     </div>
   )
 }
