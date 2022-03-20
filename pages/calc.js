@@ -22,6 +22,12 @@ const EmojiCont = styled.div`
   padding: 10px;
   margin: 10px;
   width: fit-content;
+  width:200px;  
+  align-items:center;
+  justify-content:center;
+  background-color:lightgreen;
+  border-radius:20px;
+  margin:10px;
 `;
 
 const CalcCont = styled.div`

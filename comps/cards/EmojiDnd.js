@@ -3,6 +3,13 @@ import { useDrag, useDrop } from 'react-dnd'
 import styled from 'styled-components';
 
 const EmojiCont = styled.div`
+ width:200px;
+ height:200px;
+ align-items:center;
+ justify-content:center;
+ background-color:lightgreen;
+ border-radius:20px;
+ margin:10px;
   ${({op})=>op && `opacity:${op};`};
   ${({position, left, top})=> position === 'fixed' && `
     left: ${left}px;
