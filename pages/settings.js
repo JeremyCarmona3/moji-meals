@@ -9,6 +9,7 @@ import {bgcolor,textcolor} from '../comps/variable'
 
 import styled from 'styled-components'
 import styles from '../styles/Home.module.css'
+import ToggleSwitch from '../comps/buttons/ToggleSwitch';
 
 
 const Cont = styled.div`
@@ -155,8 +156,7 @@ export default function Settings({
           <Button text="Polyunsaturated Fat"/>
         </BtnRow>
 
-        <Toggle text={"DARK Mode"} Click={()=>setTheme('dark')}></Toggle>
-        <Toggle text={"Light Mode"} Click={()=>setTheme('light')}></Toggle>
+        <ToggleSwitch />
 
       </Cont>
 
