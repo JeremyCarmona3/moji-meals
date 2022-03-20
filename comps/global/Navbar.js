@@ -136,6 +136,7 @@ const NavBar = ({
             <Link onClick={() => router.push('/')}>Moji Library</Link>
             <Link onClick={() => router.push('/findRecipe')}>Find Recipe</Link>
             <Link onClick={() => router.push('/settings')}>Settings</Link>
+            <Link onClick={() => router.push('/calc')}>calculator</Link>
           </LinksCol>
         </LinksCont>
         <NavCont>

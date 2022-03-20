@@ -11,6 +11,7 @@ import {bgcolor} from '../comps/variable';
 export default function Create({
   
 }) { 
-    
+    return<>
+    </>
   
 }
