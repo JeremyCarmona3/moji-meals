@@ -69,7 +69,7 @@ export default function Calculator() {
 
           {Object.values(favs).map((o,i)=><EmojiDnd key={o.emoji} item={o}>
             <EmojiCont key={i} item={o}>
-              {o.emoji}
+              {o.emoji} - Calories: {o.Calories}
             </EmojiCont>
           </EmojiDnd> 
           )}
