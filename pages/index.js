@@ -172,7 +172,6 @@ export default function Home({
   const [nutFactTwo,setnutFactTwo] = useState('name')
   const [nutFactThree,setnutFactThree] = useState('name')
 
-
   const [fruit,setFruit] = useState('lemon')
 
   const [sbr_type,setSBRType] =useState('asc')

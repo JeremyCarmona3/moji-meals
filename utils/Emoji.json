@@ -2,6 +2,7 @@
   {
     "name": "grapes",
     "emoji": "🍇",
+    "FoodId":1,
     "Calories (kcal)": 0.69,
     "Carbohydrates (g)": 18.1,
     "Total Sugar (g)": 0.1548,
@@ -42,6 +43,7 @@
   {
     "name": "melon",
     "emoji": "🍈",
+    "FoodId":2,
    "Calories (kcal)": 0.28,
     "Carbohydrates (g)": 0.0658,
      "Total Sugar (g)": 0.0569,
@@ -82,6 +84,7 @@
   {
     "name": "watermelon",
     "emoji": "🍉",
+    "FoodId":3,
    "Calories (kcal)": 0.3,
     "Carbohydrates (g)": 0.0755,
      "Total Sugar (g)": 0.062,
@@ -122,6 +125,7 @@
   {
     "name": "tangerine",
     "emoji": "🍊",
+    "FoodId":4,
    "Calories (kcal)": 0.53,
     "Carbohydrates (g)": 0.1334,
      "Total Sugar (g)": 0.1058,
@@ -163,6 +167,7 @@
   {
     "name": "lemon",
     "emoji": "🍋",
+    "FoodId":5,
    "Calories (kcal)": 0.29,
     "Carbohydrates (g)": 0.0932,
      "Total Sugar (g)": 0.025,
@@ -203,6 +208,7 @@
   {
     "name": "banana",
     "emoji": "🍌",
+    "FoodId":6,
    "Calories (kcal)": 0.89,
     "Carbohydrates (g)": 0.2284,
      "Total Sugar (g)": 0.1223,
@@ -243,6 +249,7 @@
   {
     "name": "pineapple",
     "emoji": "🍍",
+    "FoodId":7,
    "Calories (kcal)": 0.5,
     "Carbohydrates (g)": 0.1312,
      "Total Sugar (g)": 0.0985,
@@ -283,6 +290,7 @@
   {
     "name": "red apple",
     "emoji": "🍎",
+    "FoodId":8,
    "Calories (kcal)": 0.63,
     "Carbohydrates (g)": 0.1522,
      "Total Sugar (g)": 0.1168,
@@ -323,6 +331,7 @@
   {
     "name": "green apple",
     "emoji": "🍏",
+    "FoodId":9,
    "Calories (kcal)": 0.58,
     "Carbohydrates (g)": 0.1361,
      "Total Sugar (g)": 0.0959,
@@ -363,6 +372,7 @@
   {
     "name": "pear",
     "emoji": "🍐",
+    "FoodId":10,
    "Calories (kcal)": 0.57,
     "Carbohydrates (g)": 0.1523,
      "Total Sugar (g)": 0.0975,
@@ -403,6 +413,7 @@
   {
     "name": "peach",
     "emoji": "🍑",
+    "FoodId":11,
    "Calories (kcal)": 0.39,
     "Carbohydrates (g)": 0.0954,
      "Total Sugar (g)": 0.0839,
@@ -443,6 +454,7 @@
   {
     "name": "cherries",
     "emoji": "🍒",
+    "FoodId":12,
    "Calories (kcal)": 0.63,
     "Carbohydrates (g)": 0.1601,
      "Total Sugar (g)": 0.1282,
@@ -483,6 +495,7 @@
   {
     "name": "strawberry",
     "emoji": "🍓",
+    "FoodId":13,
    "Calories (kcal)": 0.32,
     "Carbohydrates (g)": 0.0768,
      "Total Sugar (g)": 0.0489,
@@ -523,6 +536,7 @@
   {
     "name": "kiwifruit",
     "emoji": "🥝",
+    "FoodId":14,
    "Calories (kcal)": 0.61,
     "Carbohydrates (g)": 0.1466,
      "Total Sugar (g)": 0.0899,
@@ -563,6 +577,7 @@
   {
     "name": "tomato",
     "emoji": "🍅",
+    "FoodId":15,
    "Calories (kcal)": 0.18,
     "Carbohydrates (g)": 0.0389,
      "Total Sugar (g)": 0.0263,
@@ -603,6 +618,7 @@
   {
     "name": "avocado",
     "emoji": "🥑",
+    "FoodId":16,
    "Calories (kcal)": 1.6,
     "Carbohydrates (g)": 0.0853,
      "Total Sugar (g)": 0.0066,
@@ -643,6 +659,7 @@
   {
     "name": "eggplant",
     "emoji": "🍆",
+    "FoodId":17,
    "Calories (kcal)": 0.25,
     "Carbohydrates (g)": 0.0588,
      "Total Sugar (g)": 0.0353,
@@ -683,6 +700,7 @@
   {
     "name": "potato",
     "emoji": "🥔",
+    "FoodId":18,
    "Calories (kcal)": 0.9,
     "Carbohydrates (g)": 0.2071,
      "Total Sugar (g)": 0.0648,
@@ -723,6 +741,7 @@
   {
     "name": "carrot",
     "emoji": "🥕",
+    "FoodId":19,
    "Calories (kcal)": 0.41,
     "Carbohydrates (g)": 0.0958,
      "Total Sugar (g)": 0.0474,
@@ -763,6 +782,7 @@
   {
     "name": "corn",
     "emoji": "🌽",
+    "FoodId":20,
    "Calories (kcal)": 0.96,
     "Carbohydrates (g)": 0.2098,
      "Total Sugar (g)": 0.0454,
@@ -803,6 +823,7 @@
   {
     "name": "hot pepper",
     "emoji": "🌶",
+    "FoodId":21,
    "Calories (kcal)": 0.4,
     "Carbohydrates (g)": 0.0881,
      "Total Sugar (g)": 0.053,
@@ -843,6 +864,7 @@
   {
     "name": "cucumber",
     "emoji": "🥒",
+    "FoodId":22,
    "Calories (kcal)": 0.15,
     "Carbohydrates (g)": 0.0363,
      "Total Sugar (g)": 0.0167,
@@ -883,6 +905,7 @@
   {
     "name": "mushroom",
     "emoji": "🍄",
+    "FoodId":23,
    "Calories (kcal)": 0.22,
     "Carbohydrates (g)": 0.0326,
      "Total Sugar (g)": 0.0198,
@@ -923,6 +946,7 @@
   {
     "name": "peanuts",
     "emoji": "🥜",
+    "FoodId":24,
    "Calories (kcal)": 5.67,
     "Carbohydrates (g)": 0.1613,
      "Total Sugar (g)": 0.0472,
@@ -963,6 +987,7 @@
   {
     "name": "chestnut",
     "emoji": "🌰",
+    "FoodId":25,
    "Calories (kcal)": 1.96,
     "Carbohydrates (g)": 0.4417,
      "Total Sugar (g)": 0,
@@ -1003,6 +1028,7 @@
   {
     "name": "bread",
     "emoji": "🍞",
+    "FoodId":26,
    "Calories (kcal)": 2.74,
     "Carbohydrates (g)": 0.4754,
      "Total Sugar (g)": 0.0573,
@@ -1043,6 +1069,7 @@
   {
     "name": "croissant",
     "emoji": "🥐",
+    "FoodId":27,
    "Calories (kcal)": 4.06,
     "Carbohydrates (g)": 0.458,
      "Total Sugar (g)": 0.1126,
@@ -1083,6 +1110,7 @@
   {
     "name": "french bread",
     "emoji": "🥖",
+    "FoodId":28,
    "Calories (kcal)": 2.72,
     "Carbohydrates (g)": 0.5188,
      "Total Sugar (g)": 0.0462,
@@ -1123,6 +1151,7 @@
   {
     "name": "pancakes",
     "emoji": "🥞",
+    "FoodId":29,
    "Calories (kcal)": 2.27,
     "Carbohydrates (g)": 0.283,
      "Total Sugar (g)": 0,
@@ -1163,6 +1192,7 @@
   {
     "name": "cheese",
     "emoji": "🧀",
+    "FoodId":30,
    "Calories (kcal)": 3.93,
     "Carbohydrates (g)": 0.0144,
      "Total Sugar (g)": 0,
@@ -1203,6 +1233,7 @@
   {
     "name": "beef",
     "emoji": "🍖",
+    "FoodId":31,
    "Calories (kcal)": 2.17,
     "Carbohydrates (g)": 0,
      "Total Sugar (g)": 0,
@@ -1243,6 +1274,7 @@
   {
     "name": "chicken",
     "emoji": "🍗",
+    "FoodId":32,
    "Calories (kcal)": 1.84,
     "Carbohydrates (g)": 0,
      "Total Sugar (g)": 0,
@@ -1283,6 +1315,7 @@
   {
     "name": "bacon",
     "emoji": "🥓",
+    "FoodId":33,
    "Calories (kcal)": 8.98,
     "Carbohydrates (g)": 0,
      "Total Sugar (g)": 0,
@@ -1323,6 +1356,7 @@
   {
     "name": "hamburger",
     "emoji": "🍔",
+    "FoodId":34,
    "Calories (kcal)": 2.54,
     "Carbohydrates (g)": 0.2481,
      "Total Sugar (g)": 0,
@@ -1363,6 +1397,7 @@
   {
     "name": "french fries",
     "emoji": "🍟",
+    "FoodId":35,
    "Calories (kcal)": 3.12,
     "Carbohydrates (g)": 0.4144,
      "Total Sugar (g)": 0.003,
@@ -1403,6 +1438,7 @@
   {
     "name": "pizza",
     "emoji": "🍕",
+    "FoodId":36,
    "Calories (kcal)": 2.66,
     "Carbohydrates (g)": 0.3333,
      "Total Sugar (g)": 0.0358,
@@ -1443,6 +1479,7 @@
   {
     "name": "hotdog",
     "emoji": "🌭",
+    "FoodId":37,
    "Calories (kcal)": 2.47,
     "Carbohydrates (g)": 0.184,
      "Total Sugar (g)": 0,
@@ -1483,6 +1520,7 @@
   {
     "name": "taco",
     "emoji": "🌮",
+    "FoodId":38,
    "Calories (kcal)": 2.26,
     "Carbohydrates (g)": 0.1985,
      "Total Sugar (g)": 0.009,
@@ -1523,6 +1561,7 @@
   {
     "name": "burrito",
     "emoji": "🌯",
+    "FoodId":39,
    "Calories (kcal)": 1.8,
     "Carbohydrates (g)": 0.2337,
      "Total Sugar (g)": 0.021,
@@ -1563,6 +1602,7 @@
   {
     "name": "popcorn",
     "emoji": "🍿",
+    "FoodId":40,
    "Calories (kcal)": 5,
     "Carbohydrates (g)": 0.572,
      "Total Sugar (g)": 0,
@@ -1603,6 +1643,7 @@
   {
     "name": "rice crackers",
     "emoji": "🍘",
+    "FoodId":41,
    "Calories (kcal)": 4.16,
     "Carbohydrates (g)": 0.8264,
      "Total Sugar (g)": 0,
@@ -1643,6 +1684,7 @@
   {
     "name": "rice",
     "emoji": "🍚",
+    "FoodId":42,
    "Calories (kcal)": 1.3,
     "Carbohydrates (g)": 0.2859,
      "Total Sugar (g)": 0,
@@ -1683,6 +1725,7 @@
   {
     "name": "spaghetti",
     "emoji": "🍝",
+    "FoodId":43,
    "Calories (kcal)": 1.57,
     "Carbohydrates (g)": 0.3059,
      "Total Sugar (g)": 0.0056,
@@ -1723,6 +1766,7 @@
   {
     "name": "fried shrimp",
     "emoji": "🍤",
+    "FoodId":44,
    "Calories (kcal)": 3.08,
     "Carbohydrates (g)": 0.2799,
      "Total Sugar (g)": 0.001,
@@ -1763,6 +1807,7 @@
   {
     "name": "ice cream",
     "emoji": "🍨",
+    "FoodId":45,
    "Calories (kcal)": 2.22,
     "Carbohydrates (g)": 0.222,
      "Total Sugar (g)": 0.2116,
@@ -1803,6 +1848,7 @@
   {
     "name": "doughnut",
     "emoji": "🍩",
+    "FoodId":46,
    "Calories (kcal)": 4.17,
     "Carbohydrates (g)": 0.574,
      "Total Sugar (g)": 0.3192,
@@ -1843,6 +1889,7 @@
   {
     "name": "cookie",
     "emoji": "🍪",
+    "FoodId":47,
    "Calories (kcal)": 4.97,
     "Carbohydrates (g)": 0.661,
      "Total Sugar (g)": 0,
@@ -1883,6 +1930,7 @@
   {
     "name": "cake",
     "emoji": "🍰",
+    "FoodId":48,
    "Calories (kcal)": 3.71,
     "Carbohydrates (g)": 0.534,
      "Total Sugar (g)": 0,
@@ -1923,6 +1971,7 @@
   {
     "name": "chocolate bar",
     "emoji": "🍫",
+    "FoodId":49,
    "Calories (kcal)": 5.18,
     "Carbohydrates (g)": 0.6459,
      "Total Sugar (g)": 0.4868,
@@ -1963,6 +2012,7 @@
   {
     "name": "candy",
     "emoji": "🍬",
+    "FoodId":50,
    "Calories (kcal)": 3.94,
     "Carbohydrates (g)": 0.98,
      "Total Sugar (g)": 0.629,
@@ -2003,6 +2053,7 @@
   {
     "name": "custard flan",
     "emoji": "🍮",
+    "FoodId":51,
    "Calories (kcal)": 1.45,
     "Carbohydrates (g)": 0.2278,
      "Total Sugar (g)": 0.2315,
@@ -2043,6 +2094,7 @@
   {
     "name": "honey",
     "emoji": "🍯",
+    "FoodId":52,
    "Calories (kcal)": 3.04,
     "Carbohydrates (g)": 0.824,
      "Total Sugar (g)": 0.8212,
@@ -2083,6 +2135,7 @@
   {
     "name": "milk",
     "emoji": "🥛",
+    "FoodId":53,
    "Calories (kcal)": 0.64,
     "Carbohydrates (g)": 0.0465,
      "Total Sugar (g)": 0,
@@ -2123,6 +2176,7 @@
   {
     "name": "black tea",
     "emoji": "🍵",
+    "FoodId":54,
    "Calories (kcal)": 0.01,
     "Carbohydrates (g)": 0.003,
      "Total Sugar (g)": 0,
@@ -2163,6 +2217,7 @@
   {
     "name": "sake",
     "emoji": "🍶",
+    "FoodId":55,
    "Calories (kcal)": 1.34,
     "Carbohydrates (g)": 0.05,
      "Total Sugar (g)": 0,
@@ -2203,6 +2258,7 @@
   {
     "name": "champagne",
     "emoji": "🍾",
+    "FoodId":56,
    "Calories (kcal)": 0.84,
     "Carbohydrates (g)": 0.0216,
      "Total Sugar (g)": 0.0096,
@@ -2243,6 +2299,7 @@
   {
     "name": "red wine",
     "emoji": "🍷",
+    "FoodId":57,
    "Calories (kcal)": 0.85,
     "Carbohydrates (g)": 0.0261,
      "Total Sugar (g)": 0.0062,
@@ -2283,6 +2340,7 @@
   {
     "name": "beer",
     "emoji": "🍺",
+    "FoodId":58,
    "Calories (kcal)": 0.43,
     "Carbohydrates (g)": 0.0355,
      "Total Sugar (g)": 0,

@@ -36,11 +36,16 @@ import { useTheme,
   useTotphos,
   useTotselen,
   useTotsodium,
-  useTotzinc } from "../utils/provider";
-import {bgcolor,textcolor} from '../comps/variable'
+  useTotzinc,
+  useTotsfat,  
+  useTotmfat, 
+  useTotpfat
+} from "../utils/provider";
 
+import {bgcolor,textcolor} from '../comps/variable'
 import styled from 'styled-components'
 import styles from '../styles/Home.module.css'
+import ToggleSwitch from '../comps/buttons/ToggleSwitch';
 
 
 const Cont = styled.div`
@@ -50,7 +55,6 @@ const Cont = styled.div`
   width: 100vw;
   background-color:${props=>props.background};
 `;
-
 
 const BtnRow = styled.div`
   display: flex;
@@ -105,6 +109,9 @@ export default function Settings({
   const {totselen, setTotselen} = useTotselen();
   const {totsodium, setTotsodium} = useTotsodium();
   const {totzinc, setTotzinc} = useTotzinc();
+  const {totsfat, setTotsfat} = useTotsfat();
+  const {totmfat, setTotmfat} = useTotmfat();
+  const {totpfat, setTotpfat} = useTotpfat();
 
   const [data,setData] =useState([]) 
  // const [sbc, setSBC] = useState(false)
@@ -570,7 +577,56 @@ const SwitchTotzinc =(async()=>{
   // console.log(data)
 }) 
 
-    
+
+const Switchsfat =(async()=>{
+  setSBRType(sbr_type === 'asc' ? 'desc':'asc');
+  setTotsfat([!totsfat,"Saturated Fat g"]);
+  console.log(totsfat);
+  const res = await ax.get('../api/emoji',{
+    params:{
+      nuttype:totsfat[1],
+      sort_type:sbr_type
+    }
+  })
+  setDataList(res.data)
+  console.log(res.data)
+  setData(res.data)
+  // console.log(data)
+}) 
+
+const Switchmfat =(async()=>{
+  setSBRType(sbr_type === 'asc' ? 'desc':'asc');
+  setTotmfat([!totmfat,"Monounsaturated Fat g"]);
+  console.log(totmfat);
+  const res = await ax.get('../api/emoji',{
+    params:{
+      nuttype:totmfat[1],
+      sort_type:sbr_type
+    }
+  })
+  setDataList(res.data)
+  console.log(res.data)
+  setData(res.data)
+  // console.log(data)
+})
+
+const Switchpfat =(async()=>{
+  setSBRType(sbr_type === 'asc' ? 'desc':'asc');
+  setTotpfat([!totpfat,"Polyunsaturated Fat g"]);
+  console.log(totpfat);
+  const res = await ax.get('../api/emoji',{
+    params:{
+      nuttype:totpfat[1],
+      sort_type:sbr_type
+    }
+  })
+  setDataList(res.data)
+  console.log(res.data)
+  setData(res.data)
+  // console.log(data)
+}) 
+
+  
 
     const SwitchCarbo =(async()=>{
       setSBRType(sbr_type === 'asc' ? 'desc':'asc');
@@ -685,13 +741,12 @@ const SwitchTotfat =(async ()=>{
 
         <Headers color ={color[theme]}>Specific Fats</Headers>
         <BtnRow>
-          <Button text="Saturated Fat"/>
-          <Button text="Monounsaturated Fat"/>
-          <Button text="Polyunsaturated Fat"/>
+          <Button onButtonClick={()=>Switchsfat()} text="Saturated Fat"/>
+          <Button onButtonClick={()=>Switchmfat()} text="Monounsaturated Fat"/>
+          <Button onButtonClick={()=>Switchpfat()}text="Polyunsaturated Fat"/>
         </BtnRow>
 
-        <Toggle text={"DARK Mode"} Click={()=>setTheme('dark')}></Toggle>
-        <Toggle text={"Light Mode"} Click={()=>setTheme('light')}></Toggle>
+        <ToggleSwitch />
 
       </Cont>
 
