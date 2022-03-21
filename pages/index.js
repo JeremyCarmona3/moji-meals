@@ -6,13 +6,7 @@ import React, { useState } from 'react';
 import HighlightCard from '../comps/cards/HighlightCard';
 import NutritionCard from '../comps/cards/NutritionCard';
 import NavBar from '../comps/global/Navbar';
-import { 
-  useTheme, 
-  useData,
-  useNut,
-  useTSugar,
-  useCalo
-        } from "../utils/provider";
+import { useTheme, useData} from "../utils/provider";
 import { bgcolor} from '../comps/variable';
 import ax from 'axios'
 
@@ -96,12 +90,6 @@ export default function Home({
   // const {setTheme} = useTheme();
   const {theme} =useTheme();
   const {datalist,setDataList} =useData();
-  const {sbc,setSBC} =useCalo();
-  const {carbo,setCar} =useNut();
-  const {tsugar,setTSugar} = useTSugar();
-
-
-  // var lists =[]
   const [lists,setLists]  = useState(Emoji) 
   const [condition,setCondition] = useState('main') 
   const [emoji,setEmoji] =useState('🍇')
