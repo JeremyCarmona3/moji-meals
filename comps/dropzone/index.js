@@ -7,7 +7,7 @@ const DropCont = styled.div`
   bottom: 0px;
   left: 0px;
   background: ${({bg})=>bg || 'aqua'};
-  height: 300px;
+  height: 100px;
   width: 100vw;
   z-index: 1;
   overflow-y: auto;
