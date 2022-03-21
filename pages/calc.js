@@ -21,8 +21,8 @@ const EmojiCont = styled.div`
   background: teal;
   padding: 10px;
   margin: 10px;
-  width: fit-content;
-  width:200px;  
+  width: fit-content;  
+  height:100px;
   align-items:center;
   justify-content:center;
   background-color:lightgreen;
@@ -32,6 +32,7 @@ const EmojiCont = styled.div`
 
 const CalcCont = styled.div`
   display: flex;
+  flex-wrap:wrap;
   flex-direction: row;
   background: #FAD;
 `;
