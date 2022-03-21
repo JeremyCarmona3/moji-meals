@@ -22,15 +22,15 @@ const EmojiCont = styled.div`
   padding: 10px;
   margin: 10px;
   width: fit-content;  
-  height:100px;
   align-items:center;
   justify-content:center;
   background-color:lightgreen;
   border-radius:20px;
-  margin:10px;
 `;
 
 const CalcCont = styled.div`
+  width:100%;
+  height:100%;
   display: flex;
   flex-wrap:wrap;
   flex-direction: row;
@@ -44,7 +44,7 @@ export default function Calculator() {
   
   const [favs, setFavs] = useState([]);
   const [cals, setCals] = useState([]);
-  
+
   
   
   const check =()=>{
@@ -56,6 +56,7 @@ export default function Calculator() {
       sum += s[i]["Calories (kcal)"];
     }
     setCals(sum);
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -90,10 +91,10 @@ export default function Calculator() {
           </EmojiDnd> 
           )}
         </Dropzone>
-        <Button onButtonClick={check}></Button>
+       
 
 			</DndProvider>
-
+      <Button onButtonClick={check}></Button>
       <div>{cals}</div>
     </div>
   )

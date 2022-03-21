@@ -3,8 +3,8 @@ import { useDrag, useDrop } from 'react-dnd'
 import styled from 'styled-components';
 
 const EmojiCont = styled.div`
- width:200px;
- height:200px;
+ width:120px;
+ height:100px;
  align-items:center;
  justify-content:center;
  background-color:lightgreen;
@@ -18,6 +18,17 @@ const EmojiCont = styled.div`
     z-index: 2;
   `}
 `;
+
+
+const SubCont =styled.div`
+width:10px;
+height:10px;
+align-items:center;
+justify-content:center;
+background-color:lightgreen;
+margin:10px;
+
+`
 
 const EmojiDnd = ({
   //props
@@ -71,9 +82,9 @@ const EmojiDnd = ({
   top={sty.top}
   position={sty.position}
   >
-    <div ref={drag}>
+    <SubCont ref={drag}>
       {children}
-    </div>
+    </SubCont>
 	</EmojiCont>
 }
 
