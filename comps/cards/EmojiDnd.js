@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const EmojiCont = styled.div`
  width:120px;
- height:100px;
+ height:50px;
  align-items:center;
  justify-content:center;
  background-color:lightgreen;
