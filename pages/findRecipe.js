@@ -75,14 +75,14 @@ export default function FindRecipe({
       <Cont background ={bg[theme]}>
         <NavBar title='Find Recipe' />
         <RecipeCont >
-          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Bacon Grilled Cheese Sandwich")} imgWidth='300'imgHeight='300'recipe = {"Bacon Grilled Cheese Sandwich"} recipeImg ={"https://www.spendwithpennies.com/wp-content/uploads/2019/04/Bacon-Grilled-Cheese-SpendWithPennies-3.jpg"}/>
           <RecipeCard click ={()=>setRecipeDetail("Eggplant Noodles")}  imgWidth='300'imgHeight='300'recipe = {"Eggplant Noodles"} recipeImg ={"https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18124700/051124051-02-grilled-eggplant-noodle-bowl-main.jpg"}/>
           <RecipeCard click ={()=>setRecipeDetail("Mushroom & Chicken Rice Cream Soup")} imgWidth='300'imgHeight='300'recipe = {"Mushroom & Chicken Rice Cream Soup"} recipeImg ={"https://www.simplejoy.com/wp-content/uploads/2014/01/creamy_chicken_and_wild_rice_soup_recipe-500x500.jpg"}/>
           <RecipeCard click ={()=>setRecipeDetail("Tomato & Rice Soup")} recipe = {"Tomato & Rice Soup"} imgWidth='300'imgHeight='300' recipeImg ={"https://joeats.net/wp-content/uploads/2019/01/Tomato-Rice-Soup-11.jpg"}/>
           <RecipeCard click ={()=>setRecipeDetail("Spicy Carrot Fried Rice")} recipe = {"Spicy Carrot Fried Rice"}imgWidth='300'imgHeight='300' recipeImg = {"https://static.onecms.io/wp-content/uploads/sites/9/2013/12/06/2013-r-xl-spicy-carrot-fried-rice-2000.jpg"}/>
           <RecipeCard click ={()=>setRecipeDetail("Onion Parmesan Pasta")} recipe = {"Onion Parmesan Pasta"}imgWidth='300'imgHeight='300' recipeImg = {"https://assets.epicurious.com/photos/5cb8bce9b6addb519525d1b2/4:6/w_2520,h_3780,c_limit/Caramelized-Onion-Pasta-recipe-100419.jpg"}/>
           <RecipeCard click ={()=>setRecipeDetail("Stuffed Pepper With Rice")} recipe = {"Stuffed Pepper With Rice"} imgWidth='300'imgHeight='300'recipeImg ={'https://www.lecremedelacrumb.com/wp-content/uploads/2019/05/easy-stuffed-peppers-4-500x500.jpg'}/>
-          <RecipeCard click ={()=>setRecipeDetail("Honey Drizzles Berry Banana Toast")}/>
+          <RecipeCard click ={()=>setRecipeDetail("Avocado Milkshake")}recipe = {"Avocado Milkshake"} imgWidth='300'imgHeight='300'recipeImg ={'https://images.unsplash.com/photo-1543648973-1eb94629e7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=673&q=80'}/>
           {/* {message.map((o,i)=><div key={i} id = {o.title}>{o.title}</div>)} 
         */}
         </RecipeCont>
