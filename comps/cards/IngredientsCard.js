@@ -53,40 +53,47 @@ export default function IngredientsCard({
   emoji2 = "🍉",
   emoji3 = "🍉",
   emoji4 = "🍉",
-  emoji5 = "🍉",
-  emoji6 = "🍉",
+  emoji5 = "",
+  emoji6 = "",
+  title = "",
+  Ingredients1="",
+  Ingredients2="",
+  Ingredients3="",
+  Ingredients4="",
+  Ingredients5="",
+  Ingredients6="",
 }) {
   const {theme} =useTheme();
 return (
     <Cont>
-      <HeaderText color ={color[theme]}>Ingredients</HeaderText>
+      <HeaderText color ={color[theme]}>{title}</HeaderText>
       <IngContRow color ={color[theme]}>
         <IngCont>
           <IngRow>
             <Emoji>{emoji1}</Emoji>
-            <Text color ={color[theme]}>Ingredients</Text>
+            <Text color ={color[theme]}>{Ingredients1}</Text>
           </IngRow>
           <IngRow>
             <Emoji>{emoji2}</Emoji>
-            <Text color ={color[theme]}>Ingredients</Text>
+            <Text color ={color[theme]}>{Ingredients2}</Text>
           </IngRow>
           <IngRow>
             <Emoji>{emoji3}</Emoji>
-            <Text color ={color[theme]}>Ingredients</Text>
+            <Text color ={color[theme]}>{Ingredients3}</Text>
           </IngRow>
         </IngCont>
         <IngCont>
           <IngRow>
             <Emoji>{emoji4}</Emoji>
-            <Text color ={color[theme]}>Ingredients</Text>
+            <Text color ={color[theme]}>{Ingredients4}</Text>
           </IngRow>
           <IngRow>
             <Emoji>{emoji5}</Emoji>
-            <Text color ={color[theme]}>Ingredients</Text>
+            <Text color ={color[theme]}>{Ingredients5}</Text>
           </IngRow>
           <IngRow>
             <Emoji>{emoji6}</Emoji>
-            <Text color ={color[theme]}>Ingredients</Text>
+            <Text color ={color[theme]}>{Ingredients6}</Text>
           </IngRow>
         </IngCont>
       </IngContRow>
