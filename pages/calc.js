@@ -73,7 +73,7 @@ export default function Calculator({
 
   return (
     <Cont background ={bg[theme]}>
-    <NavBar title='Find Recipe' />
+    <NavBar title='Calculate Calories' />
     <div>
       <DndProvider backend={TouchBackend} options={{
 				enableTouchEvents:false,
