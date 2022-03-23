@@ -44,6 +44,7 @@ import { useTheme,
 import {bgcolor,textcolor} from '../comps/variable'
 import styled from 'styled-components'
 import styles from '../styles/Home.module.css'
+import ToggleSwitch from '../comps/buttons/ToggleSwitch';
 
 
 const Cont = styled.div`
@@ -746,8 +747,7 @@ const SwitchTotfat =(async ()=>{
           <Button onButtonClick={()=>Switchpfat()}text="Polyunsaturated Fat"/>
         </BtnRow>
 
-        <Toggle text={"DARK Mode"} Click={()=>setTheme('dark')}></Toggle>
-        <Toggle text={"Light Mode"} Click={()=>setTheme('light')}></Toggle>
+        <ToggleSwitch />
 
       </Cont>
 

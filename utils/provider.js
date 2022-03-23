@@ -297,12 +297,12 @@ export default function AppProvider({children}){
             <MyContext30.Provider value={{totsodium,setTotsodium}}>
             <MyContext31.Provider value={{totzinc,setTotzinc}}>  
             <MyContext32.Provider value={{totsfat,setTotsfat}}>
-            </MyContext32.Provider>
             <MyContext33.Provider value={{totmfat,setTotmfat}}>
-            </MyContext33.Provider>
             <MyContext34.Provider value={{totpfat,setTotpfat}}>
-            </MyContext34.Provider>
                {children}
+            </MyContext34.Provider>   
+            </MyContext33.Provider>
+            </MyContext32.Provider>   
             </MyContext31.Provider>
             </MyContext30.Provider>
             </MyContext29.Provider>

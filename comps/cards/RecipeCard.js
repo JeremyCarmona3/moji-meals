@@ -19,7 +19,7 @@ const Text = styled.p`
 
 const RecipeImg = styled.img`
   max-width: 100%;
-  height: auto;
+  height: ${props=>props.imgHeight};
   object-fit: cover;
   border-radius: 10px;
 `;
