@@ -2,6 +2,7 @@ import Head from 'next/head'
 import ax from 'axios';
 import Emoji from '../utils/Emoji.json'
 
+
 import React, {useState} from 'react';
 import { useRouter } from 'next/router';
 // import { v4 as uuidv4 } from 'uuid';
@@ -9,11 +10,13 @@ import { useRouter } from 'next/router';
 import { TouchBackend } from 'react-dnd-touch-backend'
 //import { HTML5Backend } from 'react-dnd-html5-backend'
 import { DndProvider } from 'react-dnd'
+import {bgcolor} from '../comps/variable'
+import { useTheme } from "../utils/provider";
 
 // import Book from '@/comps/Book';
 import Dropzone from '../comps/Dropzone';
 import Button from '../comps/buttons/Button'
-
+import NavBar from '../comps/global/Navbar'
 import EmojiDnd from '../comps/cards/EmojiDnd';
 import styled from 'styled-components';
 
@@ -37,11 +40,20 @@ const CalcCont = styled.div`
   background: #FAD;
 `;
 
-export default function Calculator() {
+const Cont = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color:${props=>props.background};
+`;
+
+export default function Calculator({
+  bg = bgcolor,}) {
 
   var lists = []
   lists = Emoji
-  
+  const {theme} =useTheme();
   const [favs, setFavs] = useState([]);
   const [cals, setCals] = useState([]);
 
@@ -60,6 +72,8 @@ export default function Calculator() {
   }
 
   return (
+    <Cont background ={bg[theme]}>
+    <NavBar title='Find Recipe' />
     <div>
       <DndProvider backend={TouchBackend} options={{
 				enableTouchEvents:false,
@@ -97,5 +111,6 @@ export default function Calculator() {
       <Button onButtonClick={check}></Button>
       <div>{cals}</div>
     </div>
+    </Cont>
   )
 }
