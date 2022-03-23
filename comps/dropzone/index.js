@@ -1,13 +1,13 @@
 import { useDrag, useDrop } from 'react-dnd'
 import styled from 'styled-components'
 
-const DropCont = styled.div`
-  display:flex;  
-  position: ${({position})=>position};
+const DropCont = styled.div`  
+display:flex;  
+position: ${({position})=>position};
   bottom: 0px;
   left: 0px;
   background: ${({bg})=>bg || 'aqua'};
-  height: 100px;
+  height: 300px;
   width: 100vw;
   z-index: 1;
   overflow-y: auto;
