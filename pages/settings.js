@@ -37,9 +37,10 @@ import { useTheme,
   useTotselen,
   useTotsodium,
   useTotzinc,
-  useTotsfat, 
+  useTotsfat,  
   useTotmfat, 
-  useTotpfat } from "../utils/provider";
+  useTotpfat
+} from "../utils/provider";
 
 import {bgcolor,textcolor} from '../comps/variable'
 import styled from 'styled-components'
@@ -576,7 +577,7 @@ const SwitchTotzinc =(async()=>{
   // console.log(data)
 }) 
 
-//alicia
+
 const Switchsfat =(async()=>{
   setSBRType(sbr_type === 'asc' ? 'desc':'asc');
   setTotsfat([!totsfat,"Saturated Fat g"]);
@@ -625,8 +626,6 @@ const Switchpfat =(async()=>{
   // console.log(data)
 }) 
 
-
-//end of alicia
   
 
     const SwitchCarbo =(async()=>{

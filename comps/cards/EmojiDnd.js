@@ -7,8 +7,9 @@ const EmojiCont = styled.div`
  height:50px;
  align-items:center;
  justify-content:center;
- background-color:lightgreen;
+ background-color: white;
  border-radius:20px;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
  margin:10px;
   ${({op})=>op && `opacity:${op};`};
   ${({position, left, top})=> position === 'fixed' && `

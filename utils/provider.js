@@ -132,6 +132,7 @@ const TotalCalcStates ={
     setTotcalc:()=>{}, 
 }
 
+
 const TotalCholStates ={
     totchol:false,
     setTotchol:()=>{}, 
@@ -294,7 +295,7 @@ export default function AppProvider({children}){
             <MyContext27.Provider value={{totmang,setTotmang}}>
             <MyContext28.Provider value={{totphos,setTotphos}}>
             <MyContext29.Provider value={{totselen,setTotselen}}>
-            <MyContext30.Provider value={{totsodium,setTotsodium}}>
+            <MyContext30.Provider value={{totsodium,setTotsodium}}> 
             <MyContext31.Provider value={{totzinc,setTotzinc}}>  
             <MyContext32.Provider value={{totsfat,setTotsfat}}>
             <MyContext33.Provider value={{totmfat,setTotmfat}}>
@@ -334,7 +335,6 @@ export default function AppProvider({children}){
             </MyContext3.Provider>    
             </MyContext2.Provider>
             </MyContext1.Provider>
-
             </MyContextdata.Provider>
     </MyContext.Provider>
 }
@@ -471,6 +471,7 @@ export default function AppProvider({children}){
   export const useTotzinc = () =>{
     return useContext(MyContext31);
   }
+
 
   export const useTotsfat = () =>{
     return useContext(MyContext32);
