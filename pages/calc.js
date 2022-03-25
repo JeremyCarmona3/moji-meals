@@ -32,13 +32,23 @@ const EmojiCont = styled.div`
 `;
 
 const CalcCont = styled.div`
-  width:100%;
+  width:35%;
   height:100%;
   display: flex;
   flex-wrap:wrap;
+  justify-content: space-evenly;
   flex-direction: row;
-  background: #FAD;
+  background: gray;
+  border-radius: 20px;
+  overflow-y: scroll
 `;
+
+const TotalCont = styled.div`
+  height: 20%;
+  width: 50%;
+  background-color: #DDF4C3;
+  border-radius: 20px;
+`
 
 const Cont = styled.div`
   display: flex;
@@ -73,7 +83,7 @@ export default function Calculator({
 
   return (
     <Cont background ={bg[theme]}>
-    <NavBar title='Find Recipe' />
+    <NavBar title='Calculate Calories' />
     <div>
       <DndProvider backend={TouchBackend} options={{
 				enableTouchEvents:false,
@@ -89,6 +99,7 @@ export default function Calculator({
             </EmojiDnd>
           )}
         </CalcCont>
+        
 
         <Dropzone 
         onDropItem={(item)=>{
@@ -97,7 +108,7 @@ export default function Calculator({
             ...favs
           })
         }} >
-          <h3>Emoji Calculator</h3>
+          <h3>Drag your meal ingredients here </h3>
           {Object.values(favs).map((o,i)=><EmojiDnd key={o.emoji} item={o}>
             <EmojiCont key={i}>
               {o.emoji} - Calories: {o["Calories (kcal)"]}
@@ -108,8 +119,22 @@ export default function Calculator({
        
 
 			</DndProvider>
-      <Button onButtonClick={check}></Button>
+      <TotalCont>
+        <h3>Total Calories</h3>
       <div>{cals}</div>
+      </TotalCont>
+      <Button onButtonClick={check}
+        bgColor="white"
+        borderColor="#8BE22D"
+        color="#8BE22D"
+        text="Calculate"
+      ></Button>
+            <Button onButtonClick={{}}
+        bgColor="white"
+        borderColor="#8BE22D"
+        color="#8BE22D"
+        text="Refresh"
+      ></Button>
     </div>
     </Cont>
   )

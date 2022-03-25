@@ -133,41 +133,6 @@ const TotalCalcStates ={
 }
 
 
-const TotalVitcStates ={
-    totvitc:false,
-    setTotvitc:()=>{}, 
-}
-
-const TotalVitb12States ={
-    totvitb12:false,
-    setTotvitb12:()=>{}, 
-}
-
-const TotalVitb6States ={
-    totvitb6:false,
-    setTotvitb6:()=>{}, 
-}
-
-const TotalVitaStates ={
-    totvita:false,
-    setTotvita:()=>{}, 
-}
-
-const TotalPotStates ={
-    totpot:false,
-    setTotpot:()=>{}, 
-}
-
-const TotalSodStates ={
-    totsod:false,
-    setTotsod:()=>{}, 
-}
-
-const TotalCalcStates ={
-    totcalc:false,
-    setTotcalc:()=>{}, 
-}
-
 const TotalCholStates ={
     totchol:false,
     setTotchol:()=>{}, 
@@ -330,7 +295,7 @@ export default function AppProvider({children}){
             <MyContext27.Provider value={{totmang,setTotmang}}>
             <MyContext28.Provider value={{totphos,setTotphos}}>
             <MyContext29.Provider value={{totselen,setTotselen}}>
-            <MyContext30.Provider value={{totsodium,setTotsodium}}> d
+            <MyContext30.Provider value={{totsodium,setTotsodium}}> 
             <MyContext31.Provider value={{totzinc,setTotzinc}}>  
             <MyContext32.Provider value={{totsfat,setTotsfat}}>
             <MyContext33.Provider value={{totmfat,setTotmfat}}>
