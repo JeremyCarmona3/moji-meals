@@ -91,7 +91,7 @@ export default function Landing({
       password: userPassword
     }
 
-    axios.post('https://emoji-meal-backend.herokuapp.com/signup', newUser)
+    axios.post('https://moji-meal-backend.herokuapp.com/signup', newUser)
     .then((res) => {
       if (res) {
         localStorage.setItem('firstname', res.data.firstname)
@@ -119,7 +119,7 @@ export default function Landing({
       password: userPassword
     }
 
-    axios.post('https://emoji-meal-backend.herokuapp.com/login', newUser)
+    axios.post('https://moji-meal-backend.herokuapp.com/login', newUser)
     .then((res) => {
       if (res) {
         localStorage.setItem('firstname', res.data.firstname)
