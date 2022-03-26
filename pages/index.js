@@ -146,7 +146,7 @@ export default function Landing({
           <ColCont>
             <Heading>Welcome To</Heading>
             <ImgCont>
-              <Image src='/logo.PNG' alt="Moji Meals Logo" width={484} height={243} />
+              <Image src='/Logo.PNG' alt="Moji Meals Logo" width={484} height={243} />
             </ImgCont>
           </ColCont>
           <ColCont>
@@ -169,7 +169,7 @@ export default function Landing({
           <ColCont>
             <Heading>Welcome To</Heading>
             <ImgCont>
-              <Image src='/logo.PNG' alt="Moji Meals Logo" width={484} height={243} />
+              <Image src='/Logo.PNG' alt="Moji Meals Logo" width={484} height={243} />
             </ImgCont>
           </ColCont>
           <ColCont>
