@@ -71,7 +71,7 @@ export default function FindRecipe({
   
   useEffect(() =>{
     const readPost = async ()=>{
-      const res  = await ax.get(`https://emoji-meal-backend.herokuapp.com/getRecipe/${status}`)
+      const res  = await ax.get(`https://moji-meal-backend.herokuapp.com/getRecipe/${status}`)
       // console.log(res.data)
       setMessage(res.data)
     }
