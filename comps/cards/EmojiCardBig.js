@@ -16,17 +16,17 @@ const EmojiCardCont = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 18vw;
-  height: 30vh;
-  background: #fff;
+  width: 220px;
+  height: 220px;
   border-radius: 22px;
   box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 1%;
-  font-size:70px;
+  font-size:100px;
 `
 const EmojiText = styled.p`
   display: flex;
-  font-size: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 0;
   color:${props=>props.color};
 `
 const EmojiCardBig = ({

@@ -43,7 +43,6 @@ const Bar = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
-  
   background: #FFA722;
 `
 
@@ -51,7 +50,6 @@ const BarText = styled.div`
   line-height: 0;
   text-shadow: 0 2px 1px #000;
   font-weight: 600;
-  
   padding: 0 10px;
   color: #FFF;
 `
@@ -61,17 +59,20 @@ const AmountBar = ({
   nutrient = 'Nutrient',
 })=>{
 
-  let BuffVal = (value * 10)
+  let editVal = (value * 100)
 
   const BarWidth = {
-    width: `${BuffVal}%`
+    width: `${editVal}%`
   }
+
+  let MultipliedVal = (value * 100)
+  let RoundedVal = MultipliedVal.toFixed(2)
 
   return <Container>
     <Name>{nutrient}</Name>
     <BarCont>
       <Bar style={BarWidth}>
-        <BarText>{value}</BarText>
+        <BarText>{RoundedVal}</BarText>
       </Bar>
     </BarCont>
 </Container>

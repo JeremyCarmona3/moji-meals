@@ -93,7 +93,7 @@ const default_data = {
 }
 export default function InfoCard({
     nutOne = default_data.Calories,
-    nutTwo =default_data.Carbohydrates,
+    nutTwo = default_data.Carbohydrates,
     nutThree = default_data.TotalSugar,
     nutFour = default_data.Protein,
     nutFive = default_data.TotalFat,
@@ -121,7 +121,7 @@ export default function InfoCard({
     <div>
       <CardCont>
         <TopCont>
-          <Title>Insights Based on Preferences</Title>
+          <Title>Nutrition Insights (per 100 grams)</Title>
           <PrefLink>customize preferences</PrefLink>
         </TopCont>
         <DataCont>
