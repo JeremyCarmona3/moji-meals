@@ -26,7 +26,7 @@ const RecipeImg = styled.img`
 
 export default function RecipeCard({
   recipeImg='/RecipeOne.png',
-  recipe='Honey Drizzled Berry Banana Toast',
+  recipe=null,
   color = textcolor,
   alignItems='flex-start',
   textWidth='70%',
