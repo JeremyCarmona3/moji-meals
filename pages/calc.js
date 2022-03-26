@@ -211,7 +211,7 @@ export default function Calculator({
     //   }
     // });
 
-    const socket =io('https://moji-meals.vercel.app/')
+    const socket =io('https://moji-meals-sockets.herokuapp.com/')
 
     socket.on('init_user',(users)=>{
     setUser(users)
