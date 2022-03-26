@@ -11,39 +11,34 @@ const MainCont = styled.div`
     margin:20px;
     padding:30px;
     background-color:#DDF4C3; 
-    border-radius: 22px;
-    overflow-wrap: break-word;
+    border-radius: 10px;
     box-shadow: 0px 4px 6px grey;
 `
 
-const Header = styled.text`
-    font-size: 2em;
-    margin-top: 5%;
-    margin-left: 5%;
+const Header = styled.label`
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
 `
-const FactText = styled.text`
-    font-size: 1.3em;
-    margin-left: 5%;
-    margin-top: 5%;
-    
-`
+
 const FactCont = styled.div`
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-    margin-top: 5%;
-    align-items: center;
-    overflow-wrap: break-word;
-    word-break: break-all;
+    margin-top: 10%;
+    align-items: top;
 `
 const Bullet = styled.div`
-    display: flex;
-    border-radius: 50%;
-    min-height: 13px;
-    min-width: 13px;
+    border-radius: 100px;
+    min-height: 8px;
+    min-width: 8px;
+    max-height: 8px;
+    max-width: 8px;
+    margin: 10px;
     background: #0a0a0a;
-    margin-left: 5%;
-    margin-top: 5%;
+`
+
+const FactText = styled.text`
+    font-size: 1.2em;
 `
 
 const HighlightCard = ({
@@ -52,7 +47,7 @@ const HighlightCard = ({
     facttext3=''
   })=>{
     return<MainCont>
-        <Header>Hightlights</Header>
+        <Header>eMoji Fact Highlights</Header>
         <FactCont>
             <Bullet/>
             <FactText>{facttext}</FactText>
