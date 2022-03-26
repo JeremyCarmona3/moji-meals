@@ -133,7 +133,7 @@ const NavBar = ({
           </CloseCont>
           <LinksCol>
             <Image src={logo} alt="Moji Meals Logo" width={243} height={122} />
-            <Link onClick={() => router.push('/')}>Moji Library</Link>
+            <Link onClick={() => router.push('/mojilibrary')}>Moji Library</Link>
             <Link onClick={() => router.push('/findRecipe')}>Find Recipe</Link>
             <Link onClick={() => router.push('/settings')}>Settings</Link>
             <Link onClick={() => router.push('/calc')}>calculator</Link>
