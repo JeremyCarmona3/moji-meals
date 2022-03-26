@@ -215,7 +215,7 @@ export default function Calculator({
     //   }
     // });
 
-    const socket =io('http://localhost:8888')
+    const socket =io('https://moji-meals.vercel.app/')
 
     socket.on('init_user',(users)=>{
     setUser(users)

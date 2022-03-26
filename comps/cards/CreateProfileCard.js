@@ -58,9 +58,11 @@ const TextSpan = styled.span`
   cursor: pointer;
 `;
 
-export default function SignCard({
+export default function CreateProfileCard({
   spanOnClick=()=>{},
   btnOnClick=()=>{},
+  fnameInput=()=>{},
+  lnameInput=()=>{},
   emailInput=()=>{},
   passwordInput=()=>{},
   headingtext='Create Profile',
@@ -72,6 +74,12 @@ export default function SignCard({
     <Cont>
       <InputCont>
       <Heading>{headingtext}</Heading>
+        <LabelText>First Name:</LabelText>
+        <Input type='text' onChange={fnameInput}/>
+
+        <LabelText>Last Name:</LabelText>
+        <Input type='text' onChange={lnameInput}/>
+
         <LabelText>Email:</LabelText>
         <Input type='text' onChange={emailInput}/>
 

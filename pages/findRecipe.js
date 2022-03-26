@@ -15,7 +15,6 @@ import { imageConfigDefault } from 'next/dist/server/image-config';
 const Cont = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100vw;
   background-color:${props=>props.background};
 `;
@@ -34,16 +33,20 @@ const DetailsCont = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   padding: 0 5%;
+  justify-content: center;
 `;
 
 const CardsCont = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  padding: 0 1%;
 `;
 
 const FlexImg = styled.div`
-  margin-right: 30px;
+  justify-content: center;
+  padding: 0 1%;
+
 `;
 
 export default function FindRecipe({
@@ -61,7 +64,7 @@ export default function FindRecipe({
   
   useEffect(() =>{
     const readPost = async ()=>{
-      const res  = await ax.get(`https://emoji-meal-backend.herokuapp.com/getRecipe/${status}`)
+      const res  = await ax.get(`https://moji-meal-backend.herokuapp.com/getRecipe/${status}`)
       // console.log(res.data)
       setMessage(res.data)
     }
@@ -84,14 +87,18 @@ export default function FindRecipe({
           <RecipeCard click ={()=>setRecipeDetail("Stuffed Pepper With Rice")} recipe = {"Stuffed Pepper With Rice"} imgWidth='300'imgHeight='300'recipeImg ={'https://www.lecremedelacrumb.com/wp-content/uploads/2019/05/easy-stuffed-peppers-4-500x500.jpg'}/>
           <RecipeCard click ={()=>setRecipeDetail("Avocado Milkshake")}recipe = {"Avocado Milkshake"} imgWidth='300'imgHeight='300'recipeImg ={'https://images.unsplash.com/photo-1543648973-1eb94629e7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=673&q=80'}/>
           {/* {message.map((o,i)=><div key={i} id = {o.title}>{o.title}</div>)} 
+
+          {lists.map((o,i)=><RecipeCard id = {o.id} key={i} emoji ={o.emoji} onclick ={()=>setRecipeDetail(i)}></RecipeCard>)}
         */}
         </RecipeCont>
       </Cont>
     )
   }
-  
+
   if (status == recipeDetail){
-   console.log(message?message.title:"message")
+  
+   
+    console.log(message?message.title:"message")
  
     return(
       <Cont background ={bg[theme]}>
@@ -105,31 +112,30 @@ export default function FindRecipe({
             <FlexImg>
               <RecipeCard 
                 recipeImg = {message?message.image:"Loading..." }
-                imgWidth='500'
-                imgHeight='500'
-                textWidth='100%'
+                imgWidth='400'
+                imgHeight='400'
+                textWidth='90%'
+              />
+              <IngredientsCard 
+              title ={message?message.title:"Loading..." }
+              emoji1={message?message.ingred[0]:"Loading..." } 
+              emoji2= {message?message.ingred[1]:"Loading..."}
+              emoji3= {message?message.ingred[2]:"Loading..."}
+              emoji4= {message?message.ingred[3]:"Loading..."}
               />
             </FlexImg>
             <CardsCont>
-              <IngredientsCard 
-              title ={message?message.title:"Loading..." }
-              emoji1={message?message.ingred1:"Loading..." } 
-              emoji2= {message?message.ingred2:"Loading..."}
-              emoji3= {message?message.ingred3:"Loading..."}
-              emoji4= {message?message.ingred4:"Loading..."}
-              />
               <DirectionsCard 
-              direction1 = {message?message.prep1:"Loading..."}
-              direction2 = {message?message.prep2:"Loading..."}
-              direction3 = {message?message.prep3:"Loading..."}
-              direction4 = {message?message.prep4:"Loading..."}
-              direction5 = {message?message.step1:"Loading..."}
-              direction6 = {message?message.step2:"Loading..."}
-              direction7 = {message?message.step3:"Loading..."}
-              direction8 = {message?message.step4:"Loading..."}
+              direction1 = {message?message.prep[0]:"Loading..."}
+              direction2 = {message?message.prep[1]:"Loading..."}
+              direction3 = {message?message.prep[2]:"Loading..."}
+              direction4 = {message?message.prep[3]:"Loading..."}
+              direction5 = {message?message.step[0]:"Loading..."}
+              direction6 = {message?message.step[1]:"Loading..."}
+              direction7 = {message?message.step[2]:"Loading..."}
+              direction8 = {message?message.step[3]:"Loading..."}
               ></DirectionsCard>
               {/* {message.map((o,i)=><DirectionsCard  key ={i} direction1 = {o.title}></DirectionsCard>)}  */}
-  
             </CardsCont>
           </DetailsCont>
       </Cont>
