@@ -34,23 +34,16 @@ const DetailsCont = styled.div`
   flex-direction: row;
   padding: 0 5%;
   justify-content: center;
-
-  border: 1px solid green;
 `;
 
 const CardsCont = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  
   padding: 0 1%;
-
-  border: 1px solid red;
 `;
 
 const FlexImg = styled.div`
-  border: 1px solid blue;
-  
   justify-content: center;
   padding: 0 1%;
 
