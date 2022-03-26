@@ -262,7 +262,13 @@ export default function Calculator({
     setCals(sum);
     window.scrollTo(0, 0);
   }
-
+  
+  const refresh =()=>{
+    // console.log(favs[4]["Calories (kcal)"])
+    var sum =0
+    setCals(sum);
+    window.scrollTo(0, 0);
+  }
   return (
     <Cont background ={bg[theme]}>
     <NavBar title='Calculate Calories' />
@@ -307,7 +313,7 @@ export default function Calculator({
               color="#8BE22D"
               text="Calculate"
             ></Button>
-            <Button onButtonClick={{}}
+            <Button onButtonClick={refresh}
               bgColor="white"
               borderColor="#8BE22D"
               color="#8BE22D"
