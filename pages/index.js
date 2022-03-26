@@ -27,7 +27,7 @@ display:flex;
 flex-wrap:wrap;
 flex-direction:row;
 justify-content:center;
-margin:50px;
+margin: 10px;
 `
 
 
@@ -226,11 +226,11 @@ if(status == 'main'){
       <ContTwo>
           <HighlightCard facttext={nutFactOne} facttext2={nutFactTwo} facttext3={nutFactThree}/>
           <NutritionCard 
-          nutNameOne ={nutName[2]}
-          nutNameTwo ={nutName[3]}
-          nutNameThree= {nutName[4]}
-          nutNameFour= {nutName[5]}
-          nutNameFive= {nutName[6]}
+          nutNameOne ={nutName[3]}
+          nutNameTwo ={nutName[4]}
+          nutNameThree= {nutName[5]}
+          nutNameFour= {nutName[6]}
+          nutNameFive= {nutName[7]}
           nutOne ={nutOne} 
           nutTwo ={nutTwo} 
           nutThree ={nutThree}
