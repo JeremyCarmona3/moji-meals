@@ -18,13 +18,13 @@ import styled from 'styled-components'
 
 
 const DropCont = styled.div`  
-  display:flex; 
+  display:flex;  
   background: ${({bg})=>bg || 'aqua'};
   height: 200px;
   width: 100%;
   border-radius: 20px;
-  z-index: 0;
   overflow-y: auto;
+  z-index:0;
   opacity: 0.8
 `;
 
