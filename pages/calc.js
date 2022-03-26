@@ -197,6 +197,7 @@ export default function Calculator({
   const [text, setText]= useState('')
   const [msgs,setMsgs]= useState([])
   const [users,setUser] =useState({}); 
+  const [visible,setVisible] =useState('flex'); 
   const [mouseps,setMousePos] =useState({
     left:0,
     top:0
@@ -214,7 +215,7 @@ export default function Calculator({
     //     "my-key": "my-value"
     //   }
     // });
-
+    
     const socket =io('https://moji-meals.vercel.app/')
 
     socket.on('init_user',(users)=>{
@@ -302,9 +303,9 @@ export default function Calculator({
         }} >
           <h3>Drag your meal ingredients here </h3>
           {Object.values(favs).map((o,i)=><EmojiDnd key={o.emoji} item={o}>
-            <EmojiCont key={i}>
-              <div id = {o.emoji} > 
-              <Image src = "/cross.png" width={15} height={15}onClick={remove}></Image>
+            <EmojiCont key={i} >
+              <div id = {o.FoodId} style = {{display:visible}} onClick={remove(o.FoodId)}> 
+              <Image src = "/cross.png" width={15} height={15}></Image>
               {o.emoji} - Calories: {o["Calories (kcal)"]}
               </div>
             </EmojiCont>
