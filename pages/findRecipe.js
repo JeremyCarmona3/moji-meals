@@ -15,7 +15,6 @@ import { imageConfigDefault } from 'next/dist/server/image-config';
 const Cont = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100vw;
   background-color:${props=>props.background};
 `;
@@ -34,16 +33,27 @@ const DetailsCont = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   padding: 0 5%;
+  justify-content: center;
+
+  border: 1px solid green;
 `;
 
 const CardsCont = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  
+  padding: 0 1%;
+
+  border: 1px solid red;
 `;
 
 const FlexImg = styled.div`
-  margin-right: 30px;
+  border: 1px solid blue;
+  
+  justify-content: center;
+  padding: 0 1%;
+
 `;
 
 export default function FindRecipe({
@@ -109,12 +119,10 @@ export default function FindRecipe({
             <FlexImg>
               <RecipeCard 
                 recipeImg = {message?message.image:"Loading..." }
-                imgWidth='500'
-                imgHeight='500'
-                textWidth='100%'
+                imgWidth='400'
+                imgHeight='400'
+                textWidth='90%'
               />
-            </FlexImg>
-            <CardsCont>
               <IngredientsCard 
               title ={message?message.title:"Loading..." }
               emoji1={message?message.ingred[0]:"Loading..." } 
@@ -122,6 +130,8 @@ export default function FindRecipe({
               emoji3= {message?message.ingred[2]:"Loading..."}
               emoji4= {message?message.ingred[3]:"Loading..."}
               />
+            </FlexImg>
+            <CardsCont>
               <DirectionsCard 
               direction1 = {message?message.prep[0]:"Loading..."}
               direction2 = {message?message.prep[1]:"Loading..."}
@@ -133,7 +143,6 @@ export default function FindRecipe({
               direction8 = {message?message.step[3]:"Loading..."}
               ></DirectionsCard>
               {/* {message.map((o,i)=><DirectionsCard  key ={i} direction1 = {o.title}></DirectionsCard>)}  */}
-  
             </CardsCont>
           </DetailsCont>
       </Cont>
