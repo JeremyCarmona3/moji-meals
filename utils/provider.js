@@ -6,6 +6,11 @@ const initialStates = {
   
 }
 
+const initialPage = {
+  page:[],
+  setPage:()=>{},
+}
+
 const SortedData = {
     datalist:[],
     setDataList:()=>{},
@@ -189,6 +194,7 @@ const PolyunsaturatedFatsStates = {
 //end of alicia additions
 
 const MyContextdata = createContext(SortedData);
+const MyContext0 = createContext(initialPage);
 const MyContext = createContext(initialStates);
 const MyContext1 = createContext(CaloStates);
 const MyContext2 = createContext(CarboStates);
@@ -228,6 +234,7 @@ const MyContext34 = createContext(PolyunsaturatedFatsStates);
 export default function AppProvider({children}){
     const [theme,setTheme] = useState('light')
     const [datalist,setDataList] = useState([])
+    const [page,setPage] = useState(false)
     const [sbc,setSBC] = useState([false,"Calories (kcal)"])
     const [carbo,setCar] = useState([false,"Carbohydrates (g)"])
     const [tsugar,setTSugar] = useState([false,"Total Sugar (g)"])
@@ -266,6 +273,7 @@ export default function AppProvider({children}){
 
     return <MyContext.Provider value={{theme,setTheme}}>
             <MyContextdata.Provider value ={{datalist,setDataList}}>
+            <MyContext0.Provider value ={{page,setPage}}>
             <MyContext1.Provider value ={{sbc,setSBC}}>
             <MyContext2.Provider value={{carbo,setCar}}>
             <MyContext3.Provider value={{tsugar,setTSugar}}>
@@ -335,8 +343,13 @@ export default function AppProvider({children}){
             </MyContext3.Provider>    
             </MyContext2.Provider>
             </MyContext1.Provider>
+            </MyContext0.Provider>
             </MyContextdata.Provider>
-    </MyContext.Provider>
+            </MyContext.Provider>
+}
+
+export const usePage = () =>{
+  return useContext(MyContext0);
 }
 
 
