@@ -1,25 +1,41 @@
 import { useDrag, useDrop } from 'react-dnd'
 import styled from 'styled-components'
 
+// const DropCont = styled.div`  
+// display:flex;  
+//   position: ${({position})=>position};
+//   bottom:0px;
+//   left: 0px;
+//   background: ${({bg})=>bg || 'aqua'};
+//   height: 200px;
+//   width: 30%;
+//   border-radius: 20px;
+//   z-index: 0;
+//   overflow-y: auto;
+//   opacity: 0.8
+// `;
+
+
+
 const DropCont = styled.div`  
-display:flex;  
-position: ${({position})=>position};
-  bottom: 0px;
-  left: 0px;
+  display:flex; 
   background: ${({bg})=>bg || 'aqua'};
   height: 200px;
-  width: 50%;
+  width: 100%;
   border-radius: 20px;
-  z-index: 1;
+  z-index: 0;
   overflow-y: auto;
   opacity: 0.8
 `;
+
+
+
 
 const Dropzone = ({
   //props
   children=null,
   onDropItem=()=>{},
-  position='fixed'
+  // position='fixed'
 }) => {
 	const [{ canDrop, isOver }, drop] = useDrop(() => ({
     // The type (or types) to accept - strings or symbols
@@ -38,7 +54,7 @@ const Dropzone = ({
 	return <DropCont
 			ref={drop}
       bg={canDrop && isOver ? '#FFA722' : '#c4c4c4'}
-      position={position}
+      // position={position}
 		>
       {children}
 		</DropCont>
