@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import ax from 'axios';
 import Emoji from '../utils/Emoji.json'
+import Image from 'next/image';
+
+
+
 
 
 import React, {useState,useEffect} from 'react';
@@ -269,6 +273,13 @@ export default function Calculator({
     setCals(sum);
     window.scrollTo(0, 0);
   }
+  
+  const remove =(id)=>{
+    var selected = document.getElementById(id)
+    console.log(selected)
+  }
+
+
   return (
     <Cont background ={bg[theme]}>
     <NavBar title='Calculate Calories' />
@@ -292,7 +303,10 @@ export default function Calculator({
           <h3>Drag your meal ingredients here </h3>
           {Object.values(favs).map((o,i)=><EmojiDnd key={o.emoji} item={o}>
             <EmojiCont key={i}>
+              <div id = {o.emoji} > 
+              <Image src = "/cross.png" width={15} height={15}onClick={remove}></Image>
               {o.emoji} - Calories: {o["Calories (kcal)"]}
+              </div>
             </EmojiCont>
           </EmojiDnd> 
           )}
